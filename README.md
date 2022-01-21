@@ -1,5 +1,6 @@
 # studynote
-StudyNote 마크다운 수업내용 정리
+
+### StudyNote 마크다운 수업내용 정리
 
 안녕하세요.
 
