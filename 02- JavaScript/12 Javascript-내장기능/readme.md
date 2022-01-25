@@ -1,0 +1,1 @@
+# 12. Javascript 내장기능
