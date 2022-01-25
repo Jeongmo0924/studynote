@@ -9,7 +9,7 @@ const have_money = true;
 // const have_money = false;
 
 if (have_money) {
-    console.log(식당에서);
+    console.log("식당에서");
 }
 
 console.log("밥을 먹자");
@@ -37,7 +37,7 @@ const money2 = 12000;
 //const money2 = 3000;
 
 if (money2 >= 5000) {
-    const k = money - 5000;
+    const k = money2 - 5000;
     // 조건 값들을 공백을 기준으로 하나의 값으로 연결하는 함수.
     console.log("선물을 사고 %d원 남는다.", k);
 }
