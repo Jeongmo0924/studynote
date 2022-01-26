@@ -19,16 +19,31 @@ if (age > 19) {
     console.log("청소년입니다.");
 }
 
-let sex = "male";
-let blood = "A";
+let sex = "female";
+let blood = "B";
 
-if (sex == "male" && blood == "A") {
-    console.log("남성, A형");
-    if (sex == "male" && blood == "B") {
+if (sex == "male") {
+    if (blood == "A") {
+        console.log("남성, A형");
+    }else if (blood == "B") {
         console.log("남성, B형");
+    } else if (blood == "O") {
+        console.log("남성, O형");
+    } else {
+        console.log("남성, AB형");
+    }
+} else if (sex == "female") {
+    if (blood == "A") {
+        console.log("여성, A형");
+    }else if (blood == "B") {
+        console.log("여성, B형");
+    } else if (blood == "O") {
+        console.log("여성, O형");
+    } else {
+        console.log("여성, AB형");
     }
 } else {
 
 }
 
-뭐 대충 이렇게 하면 된다~
+// 뭐 대충 이렇게 하면 된다~
