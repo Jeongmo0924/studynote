@@ -5,24 +5,25 @@
 let y = 1;
 
 while (y <= 13) {
-    const z = 13 * y;
-    console.log("13 * %d = %d", y, z);
-    y++;
+  const z = 13 * y;
+  console.log("13 * %d = %d", y, z);
+  y++;
 }
 
 let i = 7;
 let a = 0;
 
 while (i <= 28) {
-    if (6 < i && i <= 11) {
-        let a = i
-        console.log("c조의 2월 대면 날짜는 2월 %d일 입니다.", a);
-    } else if (11 < i && i <= 18) {
-        let a = i + 2;
-        console.log("c조의 2월 대면 날짜는 2월 %d일 입니다.", a);
-    } else if (18 < i && i <= 25) {
-        let a = i + 4;
-        console.log("c조의 2월 대면 날짜는 2월 %d일 입니다.", a);
-    } else {}
-    i+=3;
+  if (6 < i && i <= 11) {
+    let a = i;
+    console.log("c조의 2월 대면 날짜는 2월 %d일 입니다.", a);
+  } else if (11 < i && i <= 18) {
+    let a = i + 2;
+    console.log("c조의 2월 대면 날짜는 2월 %d일 입니다.", a);
+  } else if (18 < i && i <= 25) {
+    let a = i + 4;
+    console.log("c조의 2월 대면 날짜는 2월 %d일 입니다.", a);
+  } else {
+  }
+  i += 3;
 }

@@ -1,0 +1,13 @@
+const k = 9;
+
+// k의 범위를 결정하는 조건문
+// -> k를 2~9사이로 제한함
+
+if (k > 1 && k < 10) {
+    for(let i = 1; i <= 9; i++) {
+        console.log("%d x %d = %d", k, i, k * i);
+    }
+} else {
+    console.log("2~9사이의 수식만 출력합니다.");
+}
+
