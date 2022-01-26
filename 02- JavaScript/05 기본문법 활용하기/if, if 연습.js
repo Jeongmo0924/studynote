@@ -20,14 +20,14 @@ let age = 33;
 // }
 
 let sex = "male";
-let blood = "AB";
+let bloodType = "AB";
 
 if (sex == "male") {
-    if (blood == "A") {
+    if (bloodType == "A") {
         console.log("남성, A형");
-    }else if (blood == "B") {
+    }else if (bloodType == "B") {
         console.log("남성, B형");
-    } else if (blood == "O") {
+    } else if (bloodType == "O") {
         console.log("남성, O형");
     } else {
         console.log("남성, AB형");
@@ -50,11 +50,11 @@ if (sex == "male") {
         console.log("청소년입니다.");
     }
 } else if (sex == "female") {
-    if (blood == "A") {
+    if (bloodType == "A") {
         console.log("여성, A형");
-    }else if (blood == "B") {
+    }else if (bloodType == "B") {
         console.log("여성, B형");
-    } else if (blood == "O") {
+    } else if (bloodType == "O") {
         console.log("여성, O형");
     } else {
         console.log("여성, AB형");
