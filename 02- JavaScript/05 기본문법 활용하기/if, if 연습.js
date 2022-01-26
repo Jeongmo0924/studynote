@@ -1,26 +1,26 @@
 let age = 33;
 
-if (age > 19) {
-    console.log("성인입니다.");
-    if (age < 30) {
-        console.log("(20대)");
-    } else if (age < 40) {
-        console.log("(30대)");
-    } else if (age < 50) {
-        console.log("(40대)");
-    } else if (age < 60) {
-        console.log("50대");
-    } else if (age < 70) {
-        console.log("60대");
-    } else {
-        console.log("70대 이상");
-    }
-} else {
-    console.log("청소년입니다.");
-}
+// if (age > 19) {
+//     console.log("성인입니다.");
+//     if (age < 30) {
+//         console.log("(20대)");
+//     } else if (age < 40) {
+//         console.log("(30대)");
+//     } else if (age < 50) {
+//         console.log("(40대)");
+//     } else if (age < 60) {
+//         console.log("50대");
+//     } else if (age < 70) {
+//         console.log("60대");
+//     } else {
+//         console.log("70대 이상");
+//     }
+// } else {
+//     console.log("청소년입니다.");
+// }
 
-let sex = "female";
-let blood = "B";
+let sex = "male";
+let blood = "AB";
 
 if (sex == "male") {
     if (blood == "A") {
@@ -31,6 +31,23 @@ if (sex == "male") {
         console.log("남성, O형");
     } else {
         console.log("남성, AB형");
+    } if (age > 19) {
+        console.log("성인입니다.");
+        if (age < 30) {
+            console.log("(20대)");
+        } else if (age < 40) {
+            console.log("(30대)");
+        } else if (age < 50) {
+            console.log("(40대)");
+        } else if (age < 60) {
+            console.log("50대");
+        } else if (age < 70) {
+            console.log("60대");
+        } else {
+            console.log("70대 이상");
+        }
+    } else {
+        console.log("청소년입니다.");
     }
 } else if (sex == "female") {
     if (blood == "A") {
@@ -41,6 +58,23 @@ if (sex == "male") {
         console.log("여성, O형");
     } else {
         console.log("여성, AB형");
+    } if (age > 19) {
+        console.log("성인입니다.");
+        if (age < 30) {
+            console.log("(20대)");
+        } else if (age < 40) {
+            console.log("(30대)");
+        } else if (age < 50) {
+            console.log("(40대)");
+        } else if (age < 60) {
+            console.log("50대");
+        } else if (age < 70) {
+            console.log("60대");
+        } else {
+            console.log("70대 이상");
+        }
+    } else {
+        console.log("청소년입니다.");
     }
 } else {
 
