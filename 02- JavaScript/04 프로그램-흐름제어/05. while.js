@@ -7,3 +7,12 @@ while (x <= 10) {       // 조건식 -> x가 10보다 작거나 같은 동안 �
 }
 
 console.log("x의 최종값:" + x);
+
+
+let a = 0;
+
+while (a < 100) {
+	const k = "a = " + a;
+	console.log(k);
+	a += 10;
+}

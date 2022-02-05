@@ -72,3 +72,7 @@ console.log(!str1);
 let str2 = "";     // 내용이 없는 문장은 false이므로 not false -> true
 console.log(!str2);
 console.groupEnd();
+
+
+let q = undefined;
+console.log(!q);
