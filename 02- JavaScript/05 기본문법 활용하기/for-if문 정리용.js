@@ -18,8 +18,8 @@
 // }
 
 let str = "";
-for(let i = 1; i < 101; i++) {
-    if ( i < 100 ){
+for(let i = 1; i < 10; i++) {
+    if ( i < 9 ){
         str += i + ",";
     } else { str += i}
 }

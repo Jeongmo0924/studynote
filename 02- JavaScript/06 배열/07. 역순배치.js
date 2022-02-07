@@ -49,3 +49,10 @@ for (let i = 0; i < int; i++) {
 }
 
 console.log(data2);
+
+
+
+const a = 10;
+console.log(a);
+a += 100;
+console.log(a);

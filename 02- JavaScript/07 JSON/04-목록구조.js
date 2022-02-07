@@ -20,7 +20,7 @@ console.log(classRoom);
 
 /** 배열의 기본 특성을 활용하여 반복문으로 접근할 수 있다. */
 for (let i = 0; i < classRoom.student.length; i++) {
-    console.group(i + "번째 학생");
+    console.group((i + 1) + "번째 학생");
     console.log(" >> 학번: " + classRoom.student[i].studno);
     console.log(" >> 학년: " + classRoom.student[i].grade);
     console.log(" >> 이름: " + classRoom.student[i].name);
@@ -32,7 +32,7 @@ for (let i = 0; i < classRoom.student.length; i++) {
 // 별도의 초기식과 반복문 안에 별도의 증감식을 추가해야 한다.
 let i = 0; // 초기식
 for(const s of classRoom.student) {
-    console.group(i+ "번째 학생");
+    console.group((i + 1) + "번째 학생");
     console.log(" >> 학번: " + classRoom.student[i].studno);
     console.log(" >> 학년: " + classRoom.student[i].grade);
     console.log(" >> 이름: " + classRoom.student[i].name);
@@ -43,7 +43,7 @@ for(const s of classRoom.student) {
 // for~of문을 사용하면서 인덱스를 알 필요가 없는 경우
 
 for(const s of classRoom.student) {
-    console.group(i+ "번째 학생");
+    console.group("학생");
     console.log(" >> 학번: " + s.studno);
     console.log(" >> 학년: " + s.grade);
     console.log(" >> 이름: " + s.name);

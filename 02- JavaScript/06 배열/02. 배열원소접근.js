@@ -7,3 +7,4 @@ let myArr2 = [100, 200, 300];
 const [a, b, c] = myArr2;
 console.log("a=%d, b=%d, c=%d, d=%d", a, b, c);
 
+console.log(a, b, c);
