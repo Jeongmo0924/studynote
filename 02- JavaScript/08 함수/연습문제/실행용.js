@@ -111,23 +111,54 @@ myGame(35)를 호출한 경우
 
 
 
-function myGame(x) {
-    let clapNum = 0;    
-    for(let i = 1; i < x + 1; i++){
-        let clap = "";
-        let one = i % 10;
-        let ten = (i - one)/10;
-        if(one % 3 == 0 && one != 0 && ten % 3 == 0 && i > 9){
-            clap += ("짝짝(" + i + ") --> 2번");
-            clapNum += 2;
-        } else if(one % 3 == 0 && one != 0 || ten % 3 == 0 && i > 9 ){
-            clap += ("짝(" + i + ") --> 1번");
-            clapNum += 1;
-        } else {
-            clap += i;
+// function myGame(x) {
+//     let clapNum = 0;    
+//     for(let i = 1; i < x + 1; i++){
+//         let clap = "";
+//         let one = i % 10;
+//         let ten = (i - one)/10;
+//         if(one % 3 == 0 && one != 0 && ten % 3 == 0 && i > 9){
+//             clap += ("짝짝(" + i + ") --> 2번");
+//             clapNum += 2;
+//         } else if(one % 3 == 0 && one != 0 || ten % 3 == 0 && i > 9 ){
+//             clap += ("짝(" + i + ") --> 1번");
+//             clapNum += 1;
+//         } else {
+//             clap += i;
+//         }
+//         console.log(clap);
+//     }console.log("박수를 총 %d번 쳤습니다.", clapNum);
+// }
+
+// myGame(99);
+
+function myGame(n) {
+    let count = 0;
+
+    for(let i = 1; i < n + 1; i++) {
+        const str = i + "";
+
+        let say = "";
+        let clap = 0;
+        for(let j of str){
+            if( j == "3" || j == "6" || j == "9"){
+                say += "짝";
+                clap++
+            }
         }
-        console.log(clap);
-    }console.log("박수를 총 %d번 쳤습니다.", clapNum);
+        if ( clap == 0) {
+            console.log(i);
+        } else {
+            console.log("%s (%d) --> %d번", say, i, clap);
+            count += clap;
+        }
+    }
+    console.log();
+    console.log("박수를 총 %d번 쳤습니다", count);
 }
 
-myGame(99);
+myGame(36);
+
+
+
+

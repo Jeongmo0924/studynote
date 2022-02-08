@@ -10,13 +10,13 @@
 const result = {"A" : 0, "B" : 0, "AB" : 0, "O" : 0};
 */
 
-// const result = {"A" : 0, "B" : 0, "AB" : 0, "O" : 0};
-// const bloodType = ["A", "A", "A", "O", "B", "B", "O", "AB", "AB", "O"];
+const result = {"A" : 0, "B" : 0, "AB" : 0, "O" : 0};
+const bloodType = ["A", "A", "A", "O", "B", "B", "O", "AB", "AB", "O"];
 
-// for(const k of bloodType){
-//     result[k]++;
-// }
-// console.log(result);
+for(const k of bloodType){
+    result[k]++;
+}
+console.log(result);
 
 
 /**
@@ -48,24 +48,24 @@ const exam = {
 ---
 */
 
-// const exam = {
-//     "철수": [89, 82, 79, 91],
-//     "민영": [91, 95, 94, 89],
-//     "남철": [65, 57, 71, 64],
-//     "혜진": [82, 76, 81, 83]
-// };
+const exam = {
+    "철수": [89, 82, 79, 91],
+    "민영": [91, 95, 94, 89],
+    "남철": [65, 57, 71, 64],
+    "혜진": [82, 76, 81, 83]
+};
 
-// let sum = 0;
-// let avg = 0;
+let sum = 0;
+let avg = 0;
 
-// for(const k in exam){
-//     sum = 0;
-//     avg = 0;
-//     for(const o of exam[k]){
-//         sum += o;
-//         avg = sum / exam[k].length;
-//     }console.log("%s의 총점은 %d점 이고, 평균은 %d점 입니다.", k, sum, avg);
-// }
+for(const k in exam){
+    sum = 0;
+    avg = 0;
+    for(const o of exam[k]){
+        sum += o;
+        avg = sum / exam[k].length;
+    }console.log("%s의 총점은 %d점 이고, 평균은 %d점 입니다.", k, sum, avg);
+}
 
 /**
  * ### 2-2.
@@ -151,32 +151,32 @@ covid19 = [
 //     {date: '0201', active: 299}
 // ]
 
-// let sum = 0;
-// let avg = 0;
+let sum = 0;
+let avg = 0;
 
-// for(let i = 0; i < covid19.length; i++){
-//     sum += covid19[i].active;
-// }
-// avg = sum / covid19.length;
-// console.log("누적 확진자 수 : %d \n평균 확진자 수 : %d", sum, avg);
+for(let i = 0; i < covid19.length; i++){
+    sum += covid19[i].active;
+}
+avg = sum / covid19.length;
+console.log("누적 확진자 수 : %d \n평균 확진자 수 : %d", sum, avg);
 
-// let a = covid19[0].active;
-// let b = "";
-// for(let i = 0; i < covid19.length; i++){
-//     if(a < covid19[i].active){
-//         a = covid19[i].active;
-//         b = covid19[i].date;
-//     }
-// }
-// console.log("확진자가 가장 많이 나타난 날 : %s", b);
+let a = covid19[0].active;
+let b = "";
+for(let i = 0; i < covid19.length; i++){
+    if(a < covid19[i].active){
+        a = covid19[i].active;
+        b = covid19[i].date;
+    }
+}
+console.log("확진자가 가장 많이 나타난 날 : %s", b);
 
-// const t = { a : 1, b : 2, c : 3};
-// console.log(t.length);
+const t = { a : 1, b : 2, c : 3};
+console.log(t.length);
 
 
 
-// for(let i = 0; i < 10; i++){
-//     ac = 1;
-// }
+for(let i = 0; i < 10; i++){
+    ac = 1;
+}
 
-// console.log(ac);
+console.log(ac);
