@@ -78,3 +78,5 @@ const qw = 10;
 const qwe = "string";
 console.log(`${qw}은 숫자 ${qwe}는 문자`); // 호옹이? 나만 몰랐던거야?
 
+
+
