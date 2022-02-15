@@ -272,3 +272,50 @@ s5.in();
 s4.out();
 s4.sendEmail();
 s4.sendSms();
+
+
+function Terran(name, hp, dps) {
+    this._name = name;
+    this._hp = hp;
+    this.dps = dps;
+}
+Terran.prototype = {
+    set name(value){
+        if(!value){
+            console.log("you have to enter suitable name");
+            return;
+        } else {
+            this._name = value;
+        }
+    },
+    get name(){
+        return this._name;
+    },
+    set hp(value){
+        if(!value){
+            console.log("you have to enter suitable hp value");
+            return;
+        }
+    },
+    get hp() {
+        return this._hp
+    },
+    set dps(value){
+        if (!value){
+            console.log("you have to enter suitable dps value");
+            return;
+        } else {
+            this._dps = value;
+        }
+    },
+    get dps(){
+        return this._dps;
+    },
+    attack(target){
+        console.log(this.name + "이 " + this.dps +"의 데미지로 공격했습니다. 남은 체력: " + this.hp);
+    }
+}
+
+const m1 = new Terran("해병1", 50, 5);
+
+m1.attack();
