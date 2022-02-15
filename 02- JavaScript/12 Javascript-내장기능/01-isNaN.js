@@ -23,3 +23,6 @@ console.log(isNaN('37'));  // 거짓     -->"37"은 NaN이 아닌 숫자 37로 �
 console.log(isNaN('37.37'));  // 거짓  -->"37.37"도 마찬가지
 console.log(isNaN(''));  // 거짓       -->빈 문자열은 NaN이 아닌 0으로 변환
 console.log(isNaN(' '));  // 거짓      -->공백만으로 구성된 문자열은 NaN이 아닌 0으로 변환
+
+console.log("----");
+console.log(false);
