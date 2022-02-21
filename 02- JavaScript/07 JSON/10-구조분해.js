@@ -22,10 +22,10 @@ console.log(data);
 // 구조분해를 수행한 나머지를 별도로 분리하기
 // --> `rest_b`라는 것은 단순한 변수 이름이므로 어떤 단어를 사용해도 무관
 const dummy = { a1: 100, a2: 200, a3: 300, a4: 400 };
-const {a1, a2, ...rest_b} = dummy;
+const {a1, a2, ...c} = dummy;
 console.log(a1);
 console.log(a2);
-console.log(rest_b);
+console.log(c);
 
 // 구조분해를 활용하여 기존 데이터와 추가적인 값을 변합한 새로운 객체 생성
 // --> `...`뒤에 오는 변수명은 반드시 원본 객체 이름이어야 한다.
