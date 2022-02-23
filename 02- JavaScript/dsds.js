@@ -734,4 +734,30 @@
 // console.log("확진자가 가장 많이 나타난 날: " + a);
 
 
-console.log(Math.random(5, 7));
+// console.log(Math.random(5, 7));
+
+
+// const arr1 = ["a", "b", "c"];
+
+// const arr2 = arr1.map((v) => v + "a");
+// console.log(arr2);
+
+
+const ssn = [9, 0, 0, 9, 2, 4, 1, 0, 5, 7, 4, 1, 2];
+let sum = 0;
+
+for(let i = 0; i < ssn.length - 1; i++){
+    let a = 0;
+    if(i < 8){
+        a = ssn[i] * (i+2); 
+    } else {
+        a = ssn[i] * (i-6);
+    }
+    sum += a;
+}
+
+console.log(sum);
+
+let a = sum % 11;
+let b = (11 - a) % 10;
+console.log(b%10 == ssn[12] ? "유효한 주번" : "유효하지 않은 주번");
