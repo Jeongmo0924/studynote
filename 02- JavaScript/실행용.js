@@ -17,15 +17,15 @@
 // }
 
 // const number = random(100, 200);
-const number = 100;
-let sum = 0;
 
-for(let i = 1; i <= number; i++){
-    sum += i % 3 == 0 ? i : 0;
-}
+// let sum = 0;
 
-console.log(number);
-console.log(sum);
+// for(let i = 1; i <= number; i++){
+//     sum += i % 3 == 0 ? i : 0;
+// }
+
+// console.log(number);
+// console.log(sum);
 
 
 /*
@@ -35,20 +35,20 @@ console.log(sum);
 (30분/20점)
 */
 
-// function solution(x) {
-//     let str = "" + x;
-//     let sum = 0;
-//     for(const k of str){
-//         let a = Number(k);
-//         sum += a;
-//     }
-//     return x % sum == 0 ? true : false;
-// }
+function solution(x) {
+    let str = "" + x;
+    let sum = 0;
+    for(const k of str){
+        let a = Number(k);
+        sum += a;
+    }
+    return x % sum == 0 ? true : false;
+}
 
-// console.log(solution(10));
-// console.log(solution(12));
-// console.log(solution(11));
-// console.log(solution(13));
+console.log(solution(10));
+console.log(solution(12));
+console.log(solution(11));
+console.log(solution(13));
 
 
 /*
