@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+#gallery {
+    width: 900px;
+    margin: auto;
+}
+
+#gallery li a span{
+    display: block;
+    width: auto;
+}
+
+#gallery a {
+    display: block;
+    padding: 10px;
+}
+
+#gallery li {
+    float: left;
+    width: 33.33%;
+}
+
+#gallery .thumb img {
+    width: 100%;
+}
+
+#gallery li .text {
+    height: 50px;
+    width: 90%;
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+
+#gallery li a:hover {
+    background-color: aqua;
+}

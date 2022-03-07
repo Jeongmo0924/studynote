@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    background-color: rgb(234, 255, 199);
+}
+
+ul {
+    list-style: none;    
+}
+
+#gallery {
+    width: 800px;
+    margin: auto;
+}
+
+#gallery li {
+    width: 25%;
+    float: left;
+}
+
+#gallery li a span {
+    display: block;
+    width: auto;
+}
+
+#gallery li .text {
+    width: 95%;
+    display: block;
+    text-align: center;
+    height: 40px;
+    margin: auto;
+    padding: 5px 0 5px 0;
+}
+
+#gallery .thumb img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#gallery li a:hover {
+    background-color: rgb(255, 134, 134);
+}
+
+#gallery li a {
+    display: block;
+    width: auto;
+    padding: 10px;
+}
