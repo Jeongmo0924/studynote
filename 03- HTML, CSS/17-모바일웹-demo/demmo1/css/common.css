@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/* 상단 배너 */
+body, html {
+    background-color: #46464d;
+    width: 318px;
+    margin: auto;
+}
+
+.top .header{
+    height: 176px;
+    width: 318px;
+    margin: auto;
+    background: url(../img/top_bg.png) no-repeat;
+    position: relative;
+}
+
+.top .header h1{
+    height: 176px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-indent: -10000px;
+}
+
+.top .option {
+    display: block;
+    position: relative;
+    width: 250px;
+    top: -90px;
+    left: 10px;
+    margin: auto;
+}
+
+.top .option:after {
+    display: block;
+    content: '';
+    float: none;
+    clear: both;
+}
+
+.top .option a {
+    text-decoration: none;
+    color: white;
+    display: inline;
+    width: 113px;
+    text-indent: -10000px;
+}
+
+.top .option a:first-child {
+    background: url(../img/btn_tel.png) no-repeat;
+    height: 52px;
+    width: 113px;
+    float: left;
+    margin: auto;
+    margin-right: 10px;
+}
+
+.top .option a:nth-child(2) {
+    background: url(../img/btn_map.png) no-repeat;
+    height: 52px;
+    width: 113px;
+    float: left;
+    margin: auto;
+}
+
+.center .list {
+    height: 184px;
+}
+
+.center .list ul {
+    margin: auto;
+    background: url(../img/menu.png) center left no-repeat, url(../img/list_right.png) top right repeat-y, url(../img/list_bg.png) repeat-x;
+    height: 184px;
+    width: 318px;
+    position: relative;
+    top: -70px;
+}
+
+.center .list ul img {
+    height: 184px;
+}
+
+.center .list ul li a {
+    display: block;
+    width: 318px;
+    height: 46px;
+    text-align: center;
+    margin: auto;
+}
+
+.center .list ul li {
+    text-indent: -10000px;
+    line-height: 46px;
+    position: relative;
+    display: block;
+    width: 318px;
+    height: 46px;
+}
+
+.footer {
+    margin: auto;
+    width: 318px;
+}
+
+.footer .line p{
+    display: inline-block;
+    padding: 10px 0 0 0;
+    text-indent: -10000px;
+}
+
+.footer .line p:first-child {
+    background: url(../img/btn_info.png);
+    position: absolute;
+    top: 360px;
+    left: 10px;
+    width: 79px;
+    z-index: 10;
+}
+
+.footer .line p:last-child {
+    background: url(../img/bottom_bg.png);
+    width: 318px;
+    height: 59px;
+    position: absolute;
+    top: 340px;
+}
+
+.footer .link p {
+    margin: auto;
+}
+
+.footer .link {
+    margin: auto;
+}
+
+.footer .link a {
+    margin: auto;
+    width: 318px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    text-indent: -10000px;
+}
+
+.footer .link .twitter {
+    background: url(../img/twitter.jpg) center no-repeat;
+    height: 47px;
+    width: 51px;
+    position: relative;
+    left: 100px;
+    display: inline;
+}
+
+.footer .link .facebook {
+    background: url(../img/face.jpg) center no-repeat;
+    height: 47px;
+    width: 51px;
+    position: relative;
+    top: 0px;
+    left: 100px;
+}
