@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+*{
+}
+
+body, html {
+    font-family: "Karma", sans-serif;
+    width: auto;
+}
+
+#titlebar {
+    position: relative;
+}
+
+#titlebar .position {
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    max-width: 1200px;
+    display: block;
+    margin: auto;
+    height: 60px;
+}
+
+#titlebar img {
+    padding: 15px 10px;
+    width: 20px;
+    float: left;
+}
+
+#titlebar img:hover {
+    background-color: #a3a3a3;
+}
+
+#titlebar h1 {
+    font-size: 24px;
+    padding: 17px 10px;
+    position: absolute;
+    left: 45%;
+}
+
+#titlebar p {
+    font-size: 24px;
+    padding: 17px 10px;
+    position: absolute;
+    right: 5px;
+}
+
+#titlebar:after {
+    float:none;
+    clear:both;
+    content:'';
+    display:block;
+}
+
+
+
+#maintable {
+    padding-top: 100px;
+    width: 100%;
+    max-width: 1168px;
+    margin: auto;
+}
+
+#maintable .list {
+    display: block;
+}
+
+#maintable .list li {
+    width: 25%;
+    float: left;
+    display: block;
+}
+
+#maintable .list li .img {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+#maintable .list li img {
+    width: 100%;
+}
+
+#maintable .list li h1 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 150%;
+    padding: 10px 0;
+}
+
+#maintable .list li p {
+    font-size: 15px;
+    text-align: center;
+    line-height: 150%;
+    padding-bottom: 50px;
+}
+
+#maintable .list:after {
+    float: none;
+    clear: both;
+    display: block;
+    content: '';
+}
+
+#maintable .num {
+    display: block;
+    text-align: center;
+}
+
+#maintable .num a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    padding: 10px 15px;
+}
+
+#maintable .num a:hover {
+    color: white;
+    background-color: black;
+}
+
+#maintable .num a:nth-child(2) {
+    color: white;
+    background-color: black;
+}
+
+#maintable .num a:nth-child(2):hover {
+    color: black;
+    background-color: #a3a3a3;
+}
+
+
+#about {
+    padding-top: 150px;
+    max-width: 1168px;
+    margin: auto;
+}
+
+#about h1 {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#about #chef img {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+#about .desc {
+    text-align: center;
+}
+
+#about .desc h2 {
+    font-size: 20px;
+    padding: 50px 0 20px 0;
+    font-weight: bold;
+}
+
+#about .desc #italic {
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+#about .desc p {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+#footer {
+    padding-top: 180px;
+    max-width: 1168px;
+    display: block;
+    margin: auto;
+}
+
+#footer .footer {
+    float: left;
+    width: 33.3%;
+    margin-left: 20px;
+}
+
+#footer h1 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+#footer .footer p {
+    font-size: 15px;
+    padding-bottom: 20px;
+    line-height: 20px;
+}
+
+#footer .footer span {
+    text-decoration: underline;
+}
+
+#footer .posts {
+    float: left;
+    width: 33.3%;
+}
+
+#footer .posts .postlist li {
+    padding: 15px;
+    margin: -5px 0 0 -20px;
+}
+
+#footer .posts .postlist li img {
+    width: 50px;
+    padding: 0 15px;
+    float: left;
+    vertical-align: middle;
+}
+
+#footer .posts .postlist li h3, p {
+    padding: 5px;
+}
+
+#footer .posts .postlist li h3 {
+    font-size: 18px;
+    padding-bottom: 3px;
+}
+
+#footer .tags p {
+    /* box-sizing: border-box; */
+    background-color: #707070;
+    color: #fff;
+    margin: 9px 4px;
+    font-size: 14px;
+    padding: 2px 8px;
+    float: left;
+    line-height: 14px;
+}
+
+#footer .tags p:first-of-type {
+    background-color: black;
+    margin: 5px 2px 5px 2px;
+    padding: 6px 7px 4px 7px;
+}

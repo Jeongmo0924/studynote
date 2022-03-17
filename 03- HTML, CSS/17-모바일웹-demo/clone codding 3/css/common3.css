@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+body, html {
+    font-family: "Karma", sans-serif;
+}
+
+#titlebar {
+    font-size: 25px;
+    border: 1px solid red;
+    position: fixed;
+    margin: auto;
+}
+
+#titlebar .position {
+    display: block;
+    margin: auto;
+    width: 1200px;
+    /* position: fixed; */
+}
+
+#titlebar .position * {
+    float: left;
+}
+
+#titlebar h1 {
+    position: absolute;
+    left: 50%;
+}
+
+#titlebar .position p:last-child {
+    position: absolute;
+    left: 80%;
+}
+
+#titlebar:after {
+    float: none;
+    clear: both;
+    content: '';
+    display: block;
+}
+
