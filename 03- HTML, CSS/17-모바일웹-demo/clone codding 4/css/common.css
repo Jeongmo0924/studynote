@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2e1e1;
+}
+
+body, h1, h2 {
+    font-family: "Raleway", sans-serif;
+}
+
+#header {
+    background: url(../img/wedding_couple.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: grayscale(50%);
+    height: 1000px;
+    width: 1080;
+    display: block;
+    margin: auto;
+}
+
+#header .headertext {
+    text-align: center;
+    padding-top: 400px;
+    color: white;
+}
+
+#header h1 {
+    font-size: 70px;
+    padding: 10px 0;
+    letter-spacing: 5px;
+}
+
+#header p:first-of-type {
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding: 20px 0;
+}
+
+#header p:last-of-type {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+#mainpage .maincontent {
+    padding-bottom: 70px;
+    width: 980px;
+    display: block;
+    margin: auto;
+}
+
+#mainpage .maincontent h2{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    color: gray;
+    padding: 85px 0 50px 0;
+}
+
+#mainpage .maincontent img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    filter: grayscale(80%);
+    border-radius: 5px;
+}
+
+#mainpage .maincontent p {
+    padding: 55px 0;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+#mainpage .maincontent a {
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    padding: 18px 0;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#invite {
+    background: url(../img/flowers.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 1000px;
+    text-align: center;
+    padding-top: 420px;
+}
+
+#invite h1 {
+    font-size: 63px;
+    color: white;
+}
+
+#invite p {
+    font-size: 30px;
+    color: white;
+    padding-top: 70px;
+}
+
+#wedding .weddingcontent {
+    width: 980px;
+    display: block;
+    margin: auto;
+}
+
+#wedding .weddingcontent h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    color: gray;
+    padding: 70px 0;
+}
+
+#wedding .weddingcontent img {
+    width: 100%;
+    border-radius: 5px;
+    filter: grayscale(70%);
+}
+
+#wedding .weddingcontent .info {
+    float: left;
+    width: 490px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#wedding .weddingcontent .info h3 {
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+#wedding .weddingcontent .info p {
+    padding: 20px 0;
+    font-size: 15px;
+}
+
+#wedding .weddingcontent:after {
+    float: none;
+    clear: both;
+    content: '';
+    display: block;
+    padding-bottom: 80px;
+}
+
+#rsvp {
+    background-color: #ffdddd;
+    height: 380px;
+}
+
+#rsvp .rsvpcontent {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#rsvp .rsvpcontent h2 {
+    font-size: 36px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+#rsvp .rsvpcontent p {
+    font-size: 18px;
+    letter-spacing: 4px;
+    padding: 40px 0 60px 0;
+}
+
+#rsvp .rsvpcontent a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    background-color: #f88078;
+    padding: 17px 60px;
+    border-radius: 5px;
+}
+
+#footer {
+    background-color: black;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#footer p, #footer a{
+    color: white;
+    text-align: center;
+    padding-top: 45px;
+    display: inline-block;
+    margin: auto;
+}
+
+#footer p {
+    padding-left: 46%;
+}
+
+#nav {
+    position: fixed;
+    bottom: 0px;
+    background-color: white;
+    opacity: 80%;
+    height: 50px;
+    width: 100%;
+}
+
+#nav .navcontent {
+    margin: 5px 20px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+#nav .navcontent a {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#nav:hover {
+    opacity: 1;
+}
+
+#nav a:hover {
+    background-color: #c4c4c4;
+}
