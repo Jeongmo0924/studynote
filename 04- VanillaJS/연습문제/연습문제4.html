@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>연습문제4</title>
+        <style type="text/css">
+            #dateBox {
+                font-size: 30px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="dateBox"></div>
+        <input type="button" value="1일" id="btn1"/>
+        <input type="button" value="7일" id="btn2"/>
+        <input type="button" value="15일" id="btn3"/>
+        <input type="button" value="30일" id="btn4"/>
+        <input type="button" value="60일" id="btn5"/>
+
+        <script>
+            const today = new Date();
+            const year = today.getFullYear();
+            const month = "00" + (today.getMonth() + 1);
+            const date = "00" + today.getDate();
+
+            const day = new Date();
+            const dyear = day.getFullYear();
+            const dmonth = "00" + (day.getMonth() + 1);
+            let ddate = "00" + day.getDate();
+
+            const btn1 = "00" + (day.getDate() - 1);
+            const btn2 = "00" + (day.getDate() - 7);
+            const btn3 = "00" + (day.getDate() -15);
+            const btn4 = "00" + (day.getDate() -30);
+            const btn5 = "00" + (day.getDate() -60);
+
+            const box = document.getElementById('dateBox');
+            box.innerHTML = (dyear + "-" + dmonth.slice(-2) + "-" + ddate.slice(-2) + "~" + year + "-" + month.slice(-2) + "-" + date.slice(-2))
+
+            document.getElementById('btn1').addEventListener('click', e => {
+                document.innerHTML(ddate) = btn1;
+            })
+            document.getElementById('btn2').addEventListener('click', e => {
+                document.innerHTML(ddate) = btn2;
+            })
+        </script>
+    </body>
+</html>

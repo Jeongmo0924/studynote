@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>개인</title>
+</head>
+<body>
+<h1 id="hi">Hello World!</h1>
+
+<script>
+    document.getElementById("hi").addEventListener('mouseover', (e) => {
+        e.currentTarget.innerHTML = ("Hello는 무슨! World는 무슨!")
+    })
+
+    document.getElementById("hi").addEventListener('mouseout', (e) => {
+        e.currentTarget.innerHTML = ("Hello World!")
+    })
+
+</script>
+</body>
+</html> 

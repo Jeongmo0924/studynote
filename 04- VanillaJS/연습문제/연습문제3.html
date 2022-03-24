@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>연습문제3</title>
+        <style type="text/css"></style>
+    </head>
+    <body>
+        <img src="img/img01.gif" id="image" />
+        <script>
+            const image = document.getElementById("image");
+            const img1 = "img/img01.gif";
+            const img2 = "img/img02.gif";
+            const img3 = "img/img03.gif";
+            const imgs = [img1, img2, img3];
+
+            let k = 0;
+
+            function timer() {
+                
+                if (k < imgs.length) {
+                    image.setAttribute("src", imgs[k]);
+                    setTimeout(timer, 3000);
+                    k++;
+                } else {
+                    k -= imgs.length;
+                    timer();
+                }
+            }
+
+            timer();
+        </script>
+    </body>
+</html>
