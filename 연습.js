@@ -260,3 +260,8 @@ for(let i = 0; i < 10; i++){
 }
 
 console.groupEnd();
+
+
+
+const fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+console.log(fruits.splice(1, 3));
