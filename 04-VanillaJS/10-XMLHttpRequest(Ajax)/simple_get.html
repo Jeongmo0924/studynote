@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>01-Simple Get</title>
+        <style type="text/css">
+            .text-success {
+                color: #0066ff;
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Simple Get</h1>
+        <a href="backend/hello.html">move to hello.html</a>
+        <a href="backend/hello.html" id="btn" class="a">load hello.html</a>
+        <a href="backend/hello_eng.html" id="btn2" class="a">load hello_eng.html</a>
+        <div id="console"></div>
+        <script>
+            document.querySelectorAll(".a").forEach((v, i) => {
+            v.addEventListener('click', e => {
+                e.preventDefault();
+
+                const href = e.currentTarget.getAttribute('href');
+                const xhr = new XMLHttpRequest();
+                
+                xhr.onreadystatechange = e => {
+                    console.log(e);
+                    const ajax = e.target;
+
+                    switch(ajax.readyState){
+                        case 1:
+                            console.log("xhr객체의 요청이 초기화됨");
+                            break;
+                        case 4:
+                            console.log("통신종료");
+                            if(ajax.status == 200){
+                                console.log("status가 200이니 정상");
+                                document.querySelector("#console").insertAdjacentHTML('beforeend', ajax.responseText);
+                            }
+                    }
+                }
+
+                xhr.open("GET", href);
+                xhr.send();
+            })
+        });
+
+
+
+
+
+
+
+
+            // document.querySelector("#btn").addEventListener('click', e => {
+            //     e.preventDefault();
+
+            //     const xhr = new XMLHttpRequest();
+            //     const method = "GET";
+            //     const url = "backend/hello.html";
+
+            //     xhr.onreadystatechange = e => {
+            //         console.log(e);
+
+            //         const a = e.target;
+            //         console.log(a);
+
+            //         switch(a.readyState) {
+            //             case XMLHttpRequest.OPENED: console.log("xhr객체의 요청이 초기화됨"); break;
+            //             case XMLHttpRequest.DONE: 
+            //                 console.log("통신종료! 성공? 에러?");
+            //                 if(a.status == 200) {
+            //                     console.log(`statusText: ${a.statusText}`);
+            //                     const req = a.responseText;
+            //                     document.querySelector("#console").insertAdjacentHTML('beforeend', req);
+            //                 } else {
+            //                     const s = parseInt(a.status / 100);
+            //                     if(s == 4) {
+            //                         console.log("요청주소가 잘못됨");
+            //                     } else if ( s == 5) {
+            //                         console.log("백엔드 고쳐라");
+            //                     } else {
+            //                         console.log("흐미 뭐지;;")
+            //                     }
+            //                 }
+            //                 break;
+            //         }
+            //     };
+
+            //     xhr.open(method, url);
+            //     xhr.send();
+            // });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>04-Simple Promise</title>
+        <style type="text/css">
+            .text-success {
+                color: #0066ff;
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Simple Promise</h1>
+        <a href="#" id="btn">Load hello.json</a>
+        <div id="console"></div>
+
+        <script src="libs/ajaxPromiseHelper.js"></script>
+        <script>
+            document.querySelector("#btn").addEventListener("click", e => {
+                e.preventDefault();
+
+                ajaxPromiseHelper("backend/hello.json").then(json => {
+                    const h1 = document.createElement("h1");
+                    h1.classList.add('text-success');
+                    h1.innerHTML = json.msg;
+                    document.querySelector("#console").appendChild(h1);
+                }).catch((e) => {
+                    console.error(e);
+                    alert(e.msg);
+                });
+
+                // promise 기법은 Ajax의 다중 처리로 인한 콜백헬 현상을 완전히 해결하지는 못한다.
+                // 다만 Ajax 처리에서 다소 복잡한 호출과정과 성공, 실패에 따른 결과 처리 부분을
+                // 분리해냈다는 점에서 코드의 관리가 조금 수월해 질 수 있다.
+
+                // 그래서 현재의 JS에서는 Promise가 개선된 async-await 기법을 새롭게 고안하여 사용중이다.
+
+                // --> Async-Await가 JS 문법의 끝판왕
+            });
+        </script>
+    </body>
+</html>

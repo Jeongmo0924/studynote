@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>이미지 연습</title>
+        <style type="text/css">
+
+            * {
+                transition: 0.5s ease;
+            }
+
+            .img-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                width: 640px;
+                margin: auto;
+            }
+
+            .pull-left {
+                float:left;
+            }
+
+            .clearfix {
+                float:none;
+                display:block;
+                content: '';
+                clear:both;
+            }
+
+            .img-list li {
+                width: 20%;
+            }
+
+            .img-list li a {
+                display: block;
+                margin: 10px;
+            }
+
+            .img-list li img {
+                width: 100%;
+            }
+
+            .viewer {
+                width: 620px;
+                margin: auto;
+                padding: 0 10px;
+            }
+
+            .viewer img {
+                width: 100%;
+            }
+
+            .opacity {
+                opacity: 0.5;
+            }
+
+            .opacity:hover {
+                opacity: 1;
+            }
+
+            .active {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="img-list clearfix">
+            <li class="pull-left"><a href="img/img01.jpg" title="테스트 이미지 1" class="link opacity"><img src="img/img01.jpg" /></a></li>
+            <li class="pull-left"><a href="img/img02.jpg" title="테스트 이미지 2" class="link opacity"><img src="img/img02.jpg" /></a></li>
+            <li class="pull-left"><a href="img/img03.jpg" title="테스트 이미지 3" class="link opacity"><img src="img/img03.jpg" /></a></li>
+            <li class="pull-left"><a href="img/img04.jpg" title="테스트 이미지 4" class="link opacity"><img src="img/img04.jpg" /></a></li>
+            <li class="pull-left"><a href="img/img05.jpg" title="테스트 이미지 5" class="link opacity"><img src="img/img05.jpg" /></a></li>
+        </ul>
+
+        <div class="viewer">
+            <img src="img/img01.jpg" id="target" />
+        </div>
+
+
+        <script>
+            document.querySelectorAll('.link').forEach((v, i) => {
+                v.addEventListener('click', e => {
+                    e.preventDefault();
+                    
+                    const href = e.currentTarget.getAttribute('href');
+                    
+                    document.querySelector('#target').setAttribute('src', href);
+                    document.querySelectorAll('.link').forEach((v2, i2) => {
+                        v2.classList.remove('active');
+                    });
+                    e.currentTarget.classList.add('active');
+                    
+                });
+            });
+        </script>
+    </body>
+</html>

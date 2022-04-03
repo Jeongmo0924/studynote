@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>02-Simple JSON</title>
+        <style type="text/css">
+            .text-success {
+                color: #0066ff;
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Simple JSON</h1>
+        <a href="#" id="btn">load hello.json</a>
+        <div id="console"></div>
+        <script>
+            document.querySelector("#btn").addEventListener('click', e => {
+                e.preventDefault();
+
+                const xhr = new XMLHttpRequest();
+                const url = "backend/hello.json";
+                const method = "GET";
+
+                xhr.onreadystatechange = e => {
+                    const ajax = e.target;
+
+                    if(ajax.readyState == 4) {
+                        if(ajax.status == 200) {
+                            const json = JSON.parse(ajax.responseText);
+                            console.log(json);
+
+                            const h1 = document.createElement('h1');
+                            h1.classList.add('text-success');
+                            h1.innerHTML = json.msg;
+
+                            document.querySelector("#console").appendChild(h1);
+                        } else {
+                            const s = parseInt(ajax.status / 100);
+                            if(s == 4){
+                                console.log('400번대 에러');
+                            } else if(s == 5){
+                                console.log('500번대 에러');
+                            } else {
+                                console.log('무슨일이여!!');
+                            }
+                        }
+                    }
+                }
+                xhr.open(method, url);
+                xhr.send();
+            })
+        </script>
+    </body>
+</html>
