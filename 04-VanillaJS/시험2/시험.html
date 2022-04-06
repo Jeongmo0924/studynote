@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kakao Book Search</title>
+        <link rel="stylesheet" href="libs/Kakao_book_search.css" />
+    </head>
+    <body>
+        <div id="loading"></div>
+        <div id="header">
+            <h1>카카오 책 검색</h1>
+            <form id="searchForm">
+                <fieldset>
+                    <select name="source" id="source">
+                        <option value="accuracy">정확도순</option>
+                        <option value="latest">발간일순</option>
+                    </select>
+                    <select name="size" id="size">
+                        <option value="10">10건</option>
+                        <option value="20">20건</option>
+                        <option value="30">30건</option>
+                        <option value="40">40건</option>
+                        <option value="50">50건</option>
+                    </select>
+                    
+                    <input type="search" id="query" placeholder="Search ..." />
+                    <button type="submit">검색</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <ul id="list">
+            <li>
+                <a href="#" target="_blank" class="use-thumbnail">
+                    <img src="img/noimage.jpg" />
+                    <h2>책 제목</h2>
+                    <p>책 내용 소개</p>
+                    <span class="info">저자 | 출판사 | 가격 | 소비자가격</span>
+                </a>
+            </li>
+        </ul>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="libs/Kakao_book_search.js"></script>
+
+    </body>
+</html>
