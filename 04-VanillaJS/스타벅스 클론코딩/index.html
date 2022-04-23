@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>스타벅스 클론코딩</title>
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/header.min.css" />
+        <link rel="stylesheet" href="assets/css/main.min.css" />
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div class="headercontent">
+                    <div class="headerlogo">
+                        <img src="assets/img/logo.png" alt="starbucks-logo" />
+                    </div>
+                    <div class="headerlinks">
+                        <div class="headerlink1">
+                            <ul>
+                                <li>
+                                    <a href="#">Sign In<span>|</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">My Starbucks<span>|</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Customer Service & Ideas<span>|</span></a>
+                                </li>
+                                <li><a href="#">Find a Store</a></li>
+                                <li>
+                                    <div class="search">
+                                        <a href="#"><input type="text" id="inputsearch" placeholder="통합검색" /><img src="assets/img/header_search.png" id="searchicon" alt="search" /></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="headerlink2">
+                            <ul>
+                                <li><a href="#" class="headeritems" data-names="coffeehead">COFFEE</a></li>
+                                <li><a href="#" class="headeritems"  data-names="menuhead">MENU</a></li>
+                                <li><a href="#" class="headeritems"  data-names="storehead">STORE</a></li>
+                                <li><a href="#" class="headeritems"  data-names="responsibilityhead">RESPONSIBILITY</a></li>
+                                <li><a href="#" class="headeritems"  data-names="starbucksrewardshead">STARBUCKS REWARDS</a></li>
+                                <li><a href="#" class="headeritems"  data-names="whatsnewhead">WHAT'S NEW</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="headermenu hidden" id="coffeehead">
+                        <div class="headermenu-top">
+                            <div class="menu">
+                                <h3><a href="#">커피</a></h3>
+                                <ul>
+                                    <li><a href="#">스타벅스 원두</a></li>
+                                    <li><a href="#">스타벅스 비아</a></li>
+                                    <li><a href="#">스타벅스앳홈 by 캡슐</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">나와 어울리는 커피</a></h3>
+                                <ul></ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">스타벅스 리저브™</a></h3>
+                                <ul>
+                                    <li><a href="#">RESERVE MAGAZINE</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">에스프레소 음료</a></h3>
+                                <ul>
+                                    <li><a href="#">도피오</a></li>
+                                    <li><a href="#">에스프레소 마키아또</a></li>
+                                    <li><a href="#">아메리카노</a></li>
+                                    <li><a href="#">마키아또</a></li>
+                                    <li><a href="#">카푸치노</a></li>
+                                    <li><a href="#">라떼</a></li>
+                                    <li><a href="#">모카</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">최상의 커피를 즐기는 법</a></h3>
+                                <ul>
+                                    <li><a href="#">커피 프레스</a></li>
+                                    <li><a href="#">푸어 오버</a></li>
+                                    <li><a href="#">아이스 푸어 오버</a></li>
+                                    <li><a href="#">커피 메이커</a></li>
+                                    <li><a href="#">리저브를 매장에서 다양하게 즐기는 법</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">커피 이야기</a></h3>
+                                <ul>
+                                    <li><a href="#">농장에서 우리의 손으로</a></li>
+                                    <li><a href="#">최상의 아라비카 원두</a></li>
+                                    <li><a href="#">스타벅스 로스트 스펙트럼</a></li>
+                                    <li><a href="#">스타벅스 디카페인</a></li>
+                                    <li><a href="#">클로버® 커피 추출 시스템</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="headermenu-bottom">
+                            <div class="bottom1">
+                                <p><a href="#">나와 어울리는 커피 찾기</a></p>
+                                <p><span>스타벅스가 여러분에게 어울리는 커피를 찾아드립니다.</span></p>
+                            </div>
+                            <div class="bottom1">
+                                <p><a href="#">최상의 커피를 즐기는 법</a></p>
+                                <p><span>여러가지 방법을 통해 다양한 풍미의 커피를 즐겨보세요.</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="headermenu hidden" id="menuhead">
+                        <div class="headermenu-top">
+                            <div class="menu">
+                                <h3><a href="#">음료</a></h3>
+                                <ul>
+                                    <li><a href="#">콜드 브루</a></li>
+                                    <li><a href="#">브루드 커피</a></li>
+                                    <li><a href="#">에스프레소</a></li>
+                                    <li><a href="#">프라푸치노</a></li>
+                                    <li><a href="#">블렌디드</a></li>
+                                    <li><a href="#">스타벅스 피지오</a></li>
+                                    <li><a href="#">티(티바나)</a></li>
+                                    <li><a href="#">기타 제조 음료</a></li>
+                                    <li><a href="#">스타벅스 주스(병음료)</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">푸드</a></h3>
+                                <ul>
+                                    <li><a href="#">브레드</a></li>
+                                    <li><a href="#">케이크</a></li>
+                                    <li><a href="#">샌드위치 & 샐러드</a></li>
+                                    <li><a href="#">따뜻한 푸드</a></li>
+                                    <li><a href="#">과일 & 요거트</a></li>
+                                    <li><a href="#">스낵 & 미니 디저트</a></li>
+                                    <li><a href="#">아이스크림</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">상품</a></h3>
+                                <ul>
+                                    <li><a href="#">머그</a></li>
+                                    <li><a href="#">글라스</a></li>
+                                    <li><a href="#">플라스틱 텀블러</a></li>
+                                    <li><a href="#">스테인리스 텀블러</a></li>
+                                    <li><a href="#">보온병</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                    <li><a href="#">커피 용품</a></li>
+                                    <li><a href="#">패키지 티(티바나)</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">카드</a></h3>
+                                <ul>
+                                    <li><a href="#">실물카드</a></li>
+                                    <li><a href="#">e-Gift 카드</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">메뉴 이야기</a></h3>
+                                <ul>
+                                    <li><a href="#">나이트로 콜드브루</a></li>
+                                    <li><a href="#">콜드 브루</a></li>
+                                    <li><a href="#">스타벅스 티바나</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="headermenu-bottom">
+                            <div class="bottom1">
+                                <p><a href="#">나이트로 콜드 브루</a></p>
+                                <p><span>나이트로 커피 정통의 물결치듯 흘러내리는 케스케이딩과 부드러운 크림을 경험하세요.</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="headermenu hidden" id="storehead">
+                        <div class="headermenu-top">
+                            <div class="menu">
+                                <h3><a href="#">매장 찾기</a></h3>
+                                <ul>
+                                    <li><a href="#">퀵 검색</a></li>
+                                    <li><a href="#">지역 검색</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">드라이브 스루 매장</a></h3>
+                                <ul>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">스타벅스 리저브™ 매장</a></h3>
+                                <ul>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">커뮤니티 스토어 매장</a></h3>
+                                <ul>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">매장 이야기</a></h3>
+                                <ul>
+                                    <li><a href="#">티바나 바 매장</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="headermenu-bottom">
+                            <div class="bottom1">
+                                <p><a href="#">매장 찾기</a></p>
+                                <p><span>보다 빠르게 매장을 찾아보세요.</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="headermenu hidden" id="responsibilityhead">
+                        <div class="headermenu-top">
+                            <div class="menu">
+                                <h3><a href="#">사회 공헌 캠페인 소개</a></h3>
+                                <ul>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">지역 사회 참여 활동</a></h3>
+                                <ul>
+                                    <li><a href="#">희망배달 캠페인</a></li>
+                                    <li><a href="#">재능기부 카페 소식</a></li>
+                                    <li><a href="#">커뮤니티 스토어</a></li>
+                                    <li><a href="#">청년 지원 프로그램</a></li>
+                                    <li><a href="#">우리 농산물 사랑 캠페인</a></li>
+                                    <li><a href="#">우리 문화 지키기</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">환경 보호 활동</a></h3>
+                                <ul>
+                                    <li><a href="#">친환경 활동</a></li>
+                                    <li><a href="#">일회용 컵 없는 매장</a></li>
+                                    <li><a href="#">커피 원두 재활용</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">윤리 구매</a></h3>
+                                <ul>
+                                    <li><a href="#">윤리적 원두 구매</a></li>
+                                    <li><a href="#">공정무역 인증</a></li>
+                                    <li><a href="#">커피 농가 지원 활동</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">글로벌 사회 공헌</a></h3>
+                                <ul>
+                                    <li><a href="#">윤리경영 보고서</a></li>
+                                    <li><a href="#">스타벅스 재단</a></li>
+                                    <li><a href="#">지구촌 봉사의 달</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="headermenu-bottom">
+                            <div class="bottom1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="headermenu hidden" id="starbucksrewardshead">
+                        <div class="headermenu-top">
+                            <div class="menu">
+                                <h3><a href="#">스타벅스 리워드</a></h3>
+                                <ul>
+                                    <li><a href="#">스타벅스 리워드 소개</a></li>
+                                    <li><a href="#">등급 및 혜택</a></li>
+                                    <li><a href="#">스타벅스 별</a></li>
+                                    <li><a href="#">자주 하는 질문</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">스타벅스 카드</a></h3>
+                                <ul>
+                                    <li><a href="#">스타벅스 카드 소개</a></li>
+                                    <li><a href="#">스타벅스 카드 갤러리</a></li>
+                                    <li><a href="#">등록 및 조회</a></li>
+                                    <li><a href="#">충전 및 이용안내</a></li>
+                                    <li><a href="#">분실신고/환불신청</a></li>
+                                    <li><a href="#">자주 하는 질문</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">스타벅스 e-Gift Card</a></h3>
+                                <ul>
+                                    <li><a href="#">스타벅스 e-Gift Card 소개</a></li>
+                                    <li><a href="#">이용안내</a></li>
+                                    <li><a href="#">선물하기</a></li>
+                                    <li><a href="#">자주 하는 질문</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#"></a></h3>
+                                <ul>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#"></a></h3>
+                                <ul>
+                            </div>
+                        </div>
+                        <div class="headermenu-bottom">
+                            <div class="bottom1">
+                                <p><a href="#">스타벅스 카드 등록하기</a></p>
+                                <p><span>카드 등록 후 리워드 서비스를 누리고 사용내역도 조회해보세요.</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="headermenu hidden" id="whatsnewhead">
+                        <div class="headermenu-top">
+                            <div class="menu">
+                                <h3><a href="#">이벤트</a></h3>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">스타벅스 카드</a></li>
+                                    <li><a href="#">스타벅스 리워드</a></li>
+                                    <li><a href="#">온라인</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">뉴스</a></h3>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">상품 출시</a></li>
+                                    <li><a href="#">스타벅스와 문화</a></li>
+                                    <li><a href="#">스타벅스 사회공헌</a></li>
+                                    <li><a href="#">스타벅스 카드출시</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="#">매장별 이벤트</a></h3>
+                                <ul>
+                                    <li><a href="#">일반 매장</a></li>
+                                    <li><a href="#">신규 매장</a></li>
+                                </ul>
+                            </div>      
+                            <div class="menu">
+                                <h3><a href="#">공지사항</a></h3>
+                                <ul>
+                                </ul>
+                            </div>          
+                            <div class="menu">
+                                <h3><a href="#">월페이퍼</a></h3>
+                                <ul>
+                                </ul>
+                            </div>                            
+                        </div>
+                        <div class="headermenu-bottom">
+                            <div class="bottom1">
+                                <p><a href="#">매장별 이벤트</a></p>
+                                <p><span>스타벅스의 매장 이벤트 정보를 확인 하실 수 있습니다.</span></p>
+                                <p><a href="#">월페이퍼</a></p>
+                                <p><span>매월 업데이트되는 월페이퍼(PC/Mobile)로 스타벅스를 더욱 가깝게 즐겨보세요!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="main">
+                <div id="section1">
+                    <div id="sec1-wrap" class="sec1-wrap">
+                        <div id="sec1-img1" class="sec1-img1">
+                            <img src="assets/img/section1-text.png" alt="find your taste" />
+                            <a href="#" class="color-button">자세히 보기</a>
+                        </div>
+                        <div id="sec1-img2" class="sec1-img2">
+                            <img src="assets/img/section1-choco.png" alt="find your taste" />
+                        </div>
+                        <div id="sec1-img3" class="sec1-img3">
+                            <img src="assets/img/section1-blended.png" alt="find your taste" />
+                        </div>
+                        <div id="sec1-img4" class="sec1-img4">
+                            <img src="assets/img/section1-greentea.png" alt="find your taste" />
+                        </div>
+                    </div>
+                </div>
+                <div id="section2"></div>
+                <div id="section3"></div>
+                <div id="section4"></div>
+                <div id="section5"></div>
+                <div id="section6"></div>
+                <div id="section7"></div>
+                <div id="section8"></div>
+            </div>
+        </div>
+
+        <script src="assets/js/header.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

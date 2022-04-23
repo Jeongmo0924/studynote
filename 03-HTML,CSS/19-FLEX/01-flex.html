@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FLEX 예제</title>
+        <style type="text/css">
+            .container {
+                border: 2px dotted #06f;
+                padding: 10px;
+                height: 200px;
+            }
+
+            .item {
+                border: 2px solid #f0f;
+                padding: 10px;
+                margin: 5px;
+            }
+
+            .container1 {
+                display: flex;
+            }
+
+            .container2 {
+                display: inline-flex;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>FLEX</h1>
+        <!-- FLEX : 아이템들의 높이가 부모의 높이만큼 늘어난다. -->
+        <div class="container container1">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+
+        <hr />
+
+        <h1>INLINE FLEX</h1>
+        <!-- INLINE FLEX : 부모의 넓이가 아이템들의 합만큼 설정된다. -->
+        <div class="container container2">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+    </body>
+</html>

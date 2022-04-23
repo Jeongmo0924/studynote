@@ -10,6 +10,7 @@ console.log(parseFloat(3.14));
 console.log(parseFloat('3.14'));
 console.log(parseFloat('314e-2'));
 console.log(parseFloat('0.0314e+2'));
+console.log(parseFloat(1));
 
 // NaN을 반환하는 경우
 console.log(parseFloat('FF2'));

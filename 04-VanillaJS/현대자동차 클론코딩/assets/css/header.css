@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+#header {
+    width: 100%;
+    min-width: 1240px;
+    height: 70px;
+    background-color: #eeeeee;
+    position: relative;
+    z-index: 100;
+}
+
+.headerall {
+    height: 70px;
+    display: block;
+    margin: auto;
+    width: 1240px;
+    text-align: center;
+    position: relative;
+}
+
+#header:after {
+    float: none;
+    content: '';
+    clear:both;
+    display: block;
+}
+
+#logo {
+    float: left;
+    padding: 22px 0px;
+    position: relative;
+    left: -28px;
+}
+
+#logo img{
+    width: 50%;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+}
+
+#header-menubar ul li {
+    float: left;
+    height: 70px;
+    line-height: 65px;
+    position: relative;
+    left: -28px;
+}
+
+#header-menubar li .header-menu {
+    padding: 0px 35px;
+    color: #5c5c5c;
+    font-weight: 900;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'L';
+    letter-spacing: 1px;
+}
+
+#container .pointout {
+    background: url(../img/ico_gnb_newwin2.png) no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: -4px -5px 0 5px;
+}
+
+#header-menubar li .header-menu:hover{
+    color: black;
+}
+
+#header-menubar2 {
+    margin-left: 20px;
+    width: 280px;
+    height: 70px;
+    float: left;
+}
+
+
+#header-menubar2 li a {
+    float:left;
+    margin: 22px 10px;
+    font-size: 18px;
+    color: #5c5c5c;
+    font-weight: 600;
+}
+
+#header-menubar2 li a img{
+    width: 18px;
+    position: relative;
+    top: 2px;
+}
+
+#header-menubar2 li a span {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    top: 6px;
+    left: 5px;
+    transform: rotate(-90deg);
+}
+
+#header-menubar2 #arrow {
+    position: relative;
+    left: 3px;
+    transition: all 0.3s;
+    top: 4px;
+}
+
+#header-menubar2 li a .clickedarrow {
+    position: relative;
+    transform: rotate(90deg);
+    left: -3px;
+    top: 8px;
+    transition: all 0.3s;
+}
+
+
+
+
+.hiddenheader {
+    width: 100%;
+    min-width: 1240px;
+    height: 70px;
+    background: #eeeeee;
+    display: block;
+    margin: auto;
+    position: absolute;
+    transition: all 0.3s
+}
+
+
+body #container .hide {
+    transition: all 0.3s;
+    display: none;
+}
+
+.hiddenheader ul {
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.hiddenheader ul li {
+    float:left;
+    text-align: center;
+    position: relative;
+    left: 500px;
+    top: 26px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin: 0px 40px;
+    font-family: "M";
+}
+
+.hiddenheader li a {
+    color: #5c5c5c;
+}
+
+.hiddenheader li a:hover {
+    color: black;
+}
+
+.hiddenheader ul li:last-of-type{
+    float:right;
+    margin:0;
+    position:relative;
+    left:-400px;
+    top: 25px;
+}
+
+#hiddenlang {
+    display: block;
+    width: 120px;
+    height: 90px;
+    position: absolute;
+    top: 60px;
+    left: 1072px;
+    background-color: #eeeeee;
+}
+
+#hiddenlang li a {
+    display: block;
+    margin-top: 0px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    left: 25px;
+    color: #9e9e9e;
+    font-size: 15px;
+    font-family: "L";
+}
+
+#hiddenlang .selected {
+    color: black;
+}
+
+#hiddenlang li a:hover{
+    color: black;
+}

@@ -1,0 +1,93 @@
+#footer {
+    background-color: black;
+    width: 100%;
+    min-width: 1240px;
+    padding: 100px 0;
+}
+
+#footer .section5 {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer * {
+    color: rgb(209, 209, 209);
+}
+
+#footer a:hover {
+    color: white;
+}
+
+#footer .pointout {
+    background-position: 0px -10px;
+}
+
+#footer .section5 img {
+    width: 20px;
+    opacity: 0.8;
+}
+
+#footer .section5 img:hover {
+    opacity: 1;
+}
+
+#footer #footlogo {
+    width: 1140px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+#footer address {
+    display: block;
+    width: 1140px;
+    margin: auto;
+}
+
+#footer h3 {
+    font-size: 19px;
+    color: white;
+}
+
+.section5 div {
+    width:fit-content
+}
+
+.section5 ul {
+    padding-top: 20px;
+}
+
+.section5 ul li {
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: "L";
+}
+
+.section5 .social {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.section5 .social p {
+    margin-bottom: -20px;
+    padding-top: 20px;
+    font-family: "L";
+    font-size: 14px;
+}
+
+.section5 .social-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section5 .social-icon li {
+    margin-right: 15px;
+}
+
+address {
+    padding-top: 100px;
+    font-family: "L";
+    font-size: 15px;
+}

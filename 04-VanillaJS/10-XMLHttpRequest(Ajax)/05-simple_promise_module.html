@@ -26,6 +26,7 @@
                     h1.classList.add('text-success');
                     h1.innerHTML = json.msg;
                     document.querySelector("#console").appendChild(h1);
+                    console.log(json);
                 }).catch((e) => {
                     console.error(e);
                     alert(e.msg);

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FLEX 예제</title>
+        <style type="text/css">
+            .container {
+                box-sizing: border-box;
+                display: flex;
+                border: 2px dotted #06f;
+                padding: 10px;
+                width: 800px;
+                height: 300px;
+            }
+
+            .item {
+                border: 2px solid #f0f;
+                padding: 10px;
+                margin: 5px;
+                width: 300px;
+            }
+
+            .container1 {
+                flex-wrap: nowrap;
+            }
+
+            .container2 {
+                flex-wrap: wrap;
+            }
+            
+            .container3 {
+                flex-wrap: wrap-reverse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>flex-wrap: nowrap;</h1>
+        <p>아이템의 넓이가 컨테이너에 맞게 축소된다.</p>
+        <div class="container container1">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+
+        <hr />
+
+        <h1>flex-wrap: wrap;</h1>
+        <div class="container container2">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+
+        <hr />
+
+        <h1>flex-wrap: wrap-reverse;</h1>
+        <div class="container container3">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+    </body>
+</html>
