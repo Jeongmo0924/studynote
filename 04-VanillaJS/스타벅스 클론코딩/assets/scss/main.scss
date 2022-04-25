@@ -20,41 +20,83 @@
             position: absolute;
             top: 50px;
             left: 80px;
+            opacity: 0;
+            
             .color-button {
                 display: block;
                 padding: 10px 28px;
-                border: 2px solid #D83A78;
                 border-radius: 5px;
                 position: absolute;
                 font-size: 15px;
-                color: #d83a78;
                 text-decoration: none;
+                background: none;
                 left: 75px;
                 top: 200px;
+                transition: all 0.5s;
+                opacity: 0;
             }
         }
         .sec1-img2 {
             position: absolute;
             top: 80px;
             left: 440px;
+            opacity: 0;
         }
         .sec1-img3 {
             position: absolute;
             top: 220px;
             left: 260px;
+            opacity: 0;
         }
         .sec1-img4 {
             position: absolute;
             top: 100px;
             left: 950px;
+            opacity: 0;
         }
     }
     
 }
 #section2 {
-    background-color:black;
+    background: url(../img/line_notice_bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: -40px center;
     width: 100%;
     height: 65px;
+    position: relative;
+    .sec2-1 {
+        width: 650px;
+        position: relative;
+        left: 395px;
+        height:65px;
+        display: flex;
+        .sec2-p{
+            height: 65px;
+            font-size: 18px;
+            line-height: 65px;
+            color: white;
+            width: 100px;
+        }
+        a {
+            background-color: blue;
+            width: 100%;
+            height: 20px;
+            position: relative;
+            top: 22.5px;
+            overflow: hidden;
+            .rolling{
+                position: relative;
+                top: -0px;
+                a {
+                    font-size: 14px;
+                    color: white;
+                    line-height: 20px;
+                    position: relative;
+                    top: -0px;
+                }
+            }
+        }
+    }
 }
 #section3 {
     background-color: green;
