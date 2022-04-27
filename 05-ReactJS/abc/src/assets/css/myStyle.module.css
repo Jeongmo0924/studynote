@@ -1,0 +1,51 @@
+.studentBg {
+    background: url(../img/bono.jpg) no-repeat;
+    background-size: 900px;
+    width: 838px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.active {
+    border-bottom: 2px solid blue;
+}
+
+.studentTable {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.studentTd {
+    color: blue;
+    font-weight: bold;
+    font-family: '궁서';
+    font-size: 15.4px;
+}
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.indigo {
+    color: purple;
+}
+

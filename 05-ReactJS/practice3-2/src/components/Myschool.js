@@ -1,4 +1,4 @@
-const data = {
+const Myschool = {
     // 학과목록
     department: [
         { id: 101, dname: "컴퓨터공학과", loc: "1호관" },
@@ -95,7 +95,7 @@ const data = {
     student: [
         {
             id: 10101,
-            name: "임현정",
+            name: "전인하",
             userid: "jun123",
             grade: 4,
             idnum: "7907021369824",
@@ -303,4 +303,4 @@ const data = {
         },
     ],
 };
-export default data;
+export default Myschool;

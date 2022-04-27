@@ -1,13 +1,15 @@
 import React from "react";
 import data from "./myschool";
-import { useParams } from "react-router-dom";
+import StudentSub from './components/StudentSub';
+
+import myStyles from '../assets/css/myStyle.module.css';
 
 const Student = () => {
     const { student } = data;
 
     return (
-        <div>
-            <table border="1">
+        <div className={myStyles.studentBg}>
+            <table border="1" className={myStyles.studentTable}>
                 <thead>
                     <tr>
                         <th>학생번호</th>
@@ -24,23 +26,7 @@ const Student = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {student.map((v, i) => {
-                        return (
-                            <tr key={i}>
-                                <td>{v.id}</td>
-                                <td>{v.name}</td>
-                                <td>{v.userid}</td>
-                                <td>{v.grade}</td>
-                                <td>{v.idnum.substring(0, 6)}-*******</td>
-                                <td>{v.birthdate.substring(0, 10)}</td>
-                                <td>{v.tel}</td>
-                                <td>{v.height}</td>
-                                <td>{v.weight}</td>
-                                <td>{v.deptno}</td>
-                                <td>{v.profno}</td>
-                            </tr>
-                        );
-                    })}
+                    <StudentSub sub={data.student}/>
                 </tbody>
             </table>
         </div>

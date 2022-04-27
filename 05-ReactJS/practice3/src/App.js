@@ -3,6 +3,7 @@ import { Link, Routes, Route } from 'react-router-dom';
 import Department from './pages/Department';
 import Professor from './pages/Professor';
 import Student from './pages/Student';
+import Data from './pages/myschool'
 
 function App() {
   return (
@@ -16,9 +17,9 @@ function App() {
       <hr />
 
       <Routes>
-        <Route path='/department' element={<Department />} />
-        <Route path='/professor' element={<Professor />} />
-        <Route path='/student' element={<Student />} />
+        <Route path='/department' element={<Department department={Data.department}/>} />
+        <Route path='/professor' element={<Professor professor={Data.professor}/>} />
+        <Route path='/student' element={<Student student={Data.student}/>} />
       </Routes>
 
     </div>

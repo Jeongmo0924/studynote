@@ -1,6 +1,6 @@
 import React from "react";
 import data from "./myschool";
-import { useParams } from "react-router-dom";
+import DepartmentSub from './components/DepartmentSub';
 
 const Department = () => {
     const { department } = data;
@@ -17,15 +17,7 @@ const Department = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {department.map((v, i) => {
-                        return (
-                            <tr key={i}>
-                                <td>{v.id}</td>
-                                <td>{v.dname}</td>
-                                <td>{v.loc}</td>
-                            </tr>
-                        );
-                    })}
+                    <DepartmentSub sub={data.department} />
                 </tbody>
             </table>
         </div>
