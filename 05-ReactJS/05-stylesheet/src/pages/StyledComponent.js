@@ -56,6 +56,16 @@ const MyBox = styled.div`
         background-color: ${(props) => props.color || '#eeeeee'};
         color: #fff;
     }
+
+    /** props 값에 대한 조건절 처리 */
+    ${(props) => 
+        props.number % 2 === 1 && 
+        css `
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+        `
+    }
 `;
 
 const StyledComponent = () => {

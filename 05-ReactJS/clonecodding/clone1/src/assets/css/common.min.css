@@ -1,0 +1,2 @@
+@font-face{font-family:'M';src:url(../fonts/현대하모니+M.ttf) format("truetype")}@font-face{font-family:'B';src:url(../fonts/현대하모니+B.ttf) format("truetype")}@font-face{font-family:'L';src:url(../fonts/현대하모니+L.ttf) format("truetype")}*{box-sizing:border-box}body,html{font-family:'M'}ul{list-style:none}a{text-decoration:none;color:black}.pointout{background:url(../img/ico_gnb_newwin2.png) no-repeat;vertical-align:middle;display:inline-block;width:10px;height:10px;margin:-4px -5px 0 5px}
+/*# sourceMappingURL=common.min.css.map */
