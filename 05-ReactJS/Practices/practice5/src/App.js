@@ -1,10 +1,29 @@
+/**
+ *  @filename: App.js
+ *  @description: <head>태그 적용된 메인 페이지
+ *  @author: Park J.M (regettog@gmail.com)
+ * 
+ */
+
+/** 패키지 참조 */
+// 기본 참조 객체
 import React from "react";
+
+// 컴포넌트 객체
 import Header from "./component/Header";
 import Content from "./page/Content";
 import Footer from "./component/Footer";
+
+// SEO처리 기능 패키지
 import { Helmet } from "react-helmet";
+
+// css적용
 import './assets/css/common.css';
 
+/**
+ * SEO 처리 컴포넌트
+ * @returns {JSX.Element}
+ */
 const Meta = () => {
     return (
         <Helmet>
