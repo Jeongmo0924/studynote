@@ -1,0 +1,159 @@
+{
+    "section6": [
+        { "src": "/img/1.jpg", "alt": "sns image1" },
+        { "src": "img/2.jpg", "alt": "sns image2" },
+        { "src": "img/3.jpg", "alt": "sns image3" },
+        { "src": "img/4.jpg", "alt": "sns image4" },
+        { "src": "img/5.jpg", "alt": "sns image5" },
+        { "src": "img/6.jpg", "alt": "sns image6" },
+        { "src": "img/7.jpg", "alt": "sns image7" },
+        { "src": "img/8.jpg", "alt": "sns image8" },
+        { "src": "img/9.jpg", "alt": "sns image9" },
+        { "src": "img/10.jpg", "alt": "sns image10" },
+        { "src": "img/11.jpg", "alt": "sns image11" },
+        { "src": "img/12.jpg", "alt": "sns image12" },
+        { "src": "img/13.jpg", "alt": "sns image13" },
+        { "src": "img/14.jpg", "alt": "sns image14" },
+        { "src": "img/15.jpg", "alt": "sns image15" }
+    ],
+    "section2": [
+        {
+            "img": "/img/slick1.jpg",
+            "alt": "pikachu_instagram"
+        },
+        {
+            "img": "/img/slick2.png",
+            "alt": "slick2"
+        },
+        {
+            "img": "/img/slick3.png",
+            "alt": "slick3"
+        },
+        {
+            "img": "/img/slick4.png",
+            "alt": "slick4"
+        },
+        {
+            "img": "/img/slick5.png",
+            "alt": "slick5"
+        },
+        {
+            "img": "/img/slick6.png",
+            "alt": "slick6"
+        },
+        {
+            "img": "/img/slick7.png",
+            "alt": "slick7"
+        },
+        {
+            "img": "/img/slick8.png",
+            "alt": "slick8"
+        },
+        {
+            "img": "/img/slick9.png",
+            "alt": "slick9"
+        },
+        {
+            "img": "/img/slick10.png",
+            "alt": "slick10"
+        },
+        {
+            "img": "/img/slick11.png",
+            "alt": "slick11"
+        }
+    ],
+    "section3": [
+        {
+            "img": "/img/section3_ho.png",
+            "alt": "happy order",
+            "event": "img/section3_se.gif",
+            "msg": "해피오더 딜리버리로 간편하게 주문하세요!",
+            "date": "상시진행"
+        },
+        {
+            "img": "/img/section3_bm.png",
+            "alt": "bemin",
+            "event": "img/section3_se.gif",
+            "msg": "배달의 민족에서 빠르게 주문하세요!",
+            "date": "상시진행"
+        },
+        {
+            "img": "/img/section3_ygy.png",
+            "alt": "yogiyo",
+            "event": "img/section3_se.gif",
+            "msg": "요기요에서 손쉽게 주문하세요!",
+            "date": "상시진행"
+        },
+        {
+            "img": "/img/section3_kakao.png",
+            "alt": "kakao order",
+            "event": "img/section3_se.gif",
+            "msg": "카카오톡 주문하기에서 편리하게 주문하세요!",
+            "date": "상시진행"
+        },
+        {
+            "img": "/img/section3_kia.png",
+            "alt": "kia members",
+            "event": "img/section3_oe.gif",
+            "msg": "기아 멤버스 최대 50% 제휴 혜택",
+            "date": "상시진행"
+        },
+        {
+            "img": "/img/section3_jehyu.png",
+            "alt": "baskin robbins jehyu",
+            "event": "img/section3_oe.gif",
+            "msg": "2022 배스킨라빈스 특별한 제휴혜택",
+            "date": "상시진행"
+        },
+        {
+            "img": "/img/section3_cold.png",
+            "alt": "콜드브루 오트라떼 출시 4800원",
+            "event": "img/section3_se.gif",
+            "msg": "고소한 오트밀크와 깜끔한 콜드브루의 만남, 콜드브루 오트라떼 출시!",
+            "date": "상시진행"
+        },
+        {
+            "img": "/img/section3_kt.png",
+            "alt": "kt멤버십 고객이라면 누구나 파인트 30% 할인, vvip고객은 쿼터 1개 Free",
+            "event": "img/section3_se.gif",
+            "msg": "KT멤버십 고객이라면 누구나 파인트 30% 할인!",
+            "date": "상시진행"
+        },
+        {
+            "img": "/img/section3_mp.png",
+            "alt": "Mpoint 50% 사용",
+            "event": "img/section3_se.gif",
+            "msg": "현태카드 M포인트 50% 사용",
+            "date": "상시진행"
+        },
+        {
+            "img": "img/section3_dal.png",
+            "alt": "제휴 서비스 이용 안내 더욱 달콤하게 즐기는 혜택",
+            "event": "img/section3_se.gif",
+            "msg": "제휴 할인 카드 혜택 안내",
+            "date": "상시 진행"
+        },
+        {
+            "img": "img/section3_font.png",
+            "alt": "2018 한글날 기념 무료 글꼴 공개 배스킨라빈스체",
+            "event": "img/section3_oe.gif",
+            "msg": "2018 한글날 기념 무료 글꼴 공개! 배스킨라빈스체",
+            "date": "상시진행"
+        },
+        {
+            "img": "img/section3_tum.png",
+            "alt": "1회용 컵 사용 줄이기 캠페인 안내 텀블러 사용 고객에게 300원의 할인 혜택을 드리고 있습니다.",
+            "event": "img/section3_se.gif",
+            "msg": "1회용 컴 사용 줄이기 안내",
+            "date": "상시진행"
+        },
+        {
+            "img": "img/section3_best.png",
+            "alt": "2022년 1분기 고객님들이 직접 칭찬한 BEST 칭찬점포 안내",
+            "event": "img/section3_se.gif",
+            "msg": "2022년 1분기 고객 BEST 칭찬점포 안내",
+            "date": null
+        }
+    ]
+}
+
