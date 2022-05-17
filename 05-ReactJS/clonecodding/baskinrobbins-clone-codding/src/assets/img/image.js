@@ -1,3 +1,9 @@
+/**
+ * @filename: image.js
+ * @description: import할 이미지들을 모아놓은 파일
+ * @author: 박정모(oooperbjm@gmail.com)
+ */
+
 // Header.js용 images
 export const Img = require( "./header_bg.gif");
 export const Search = require( "./header_search_icon.png");

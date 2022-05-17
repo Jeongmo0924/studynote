@@ -1,3 +1,9 @@
+/**
+ * @filename: Section4.js
+ * @description: Content 파일 네번째 부분, 간단한 설명을 포함한 메뉴 이미지에 링크
+ * @author: 박정모(oooperbjm@gmail.com)
+ */
+
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -75,6 +81,7 @@ const Section4 = () => {
     return (
         <Section4Container>
             <img className="brmenu" src={Brmenu} alt="BR MENU" />
+            {/* 메뉴이미지가 하나로 통합되어있기에 각 부분에 position: absolute 적용한 <a>태그를 덮어씌움 */}
             <img className="menu" src={Menu} alt="Menus" />
             <Link to="/" className="icecream" />
             <Link to="/" className="icecream-cake" />

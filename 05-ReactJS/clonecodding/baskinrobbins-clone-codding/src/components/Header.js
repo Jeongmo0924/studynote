@@ -136,6 +136,7 @@ const HeaderContainer = styled.div`
 `;
 
 const Header = (props) => {
+    // 마우스 오버시 css 변경을 위한 ref
     const open = React.useRef();
     const openmenu = React.useRef();
 

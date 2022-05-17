@@ -1,3 +1,9 @@
+/**
+ * @filename: Section5.js
+ * @description: Content 파일 다섯번째 부분, 매장찾기 & 해피오더, 배달 링크
+ * @author: 박정모(oooperbjm@gmail.com)
+ */
+
 import React from 'react';
 import styled from 'styled-components';
 import { Store, Find, Order, Delivery } from '../assets/img/image';
