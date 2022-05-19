@@ -21,9 +21,8 @@ const SelectContainer = styled.div`
     }
 `;
 
-
 const App = () => {
-  // 선택된 select 값을 저장할 상태값
+    // 선택된 select 값을 저장할 상태값
     const [state, setState] = React.useState("");
 
     // 마운트됨과 동시에 axios get
@@ -76,8 +75,8 @@ const App = () => {
 
     return (
         <div>
-          <h1>EXAM 10</h1>
-          <ht />
+            <h1>EXAM 10</h1>
+            <ht />
 
             <Spinner visible={loading} />
             <SelectContainer>
@@ -121,9 +120,9 @@ const App = () => {
                                     <td>{id}</td>
                                     <td>{year}년</td>
                                     <td>{month}월</td>
-                                    <td>{accident.toLocaleString('ko-KR')}건</td>
-                                    <td>{death.toLocaleString('ko-KR')}명</td>
-                                    <td>{injury.toLocaleString('ko-KR')}명</td>
+                                    <td>{accident.toLocaleString("ko-KR")}건</td>
+                                    <td>{death.toLocaleString("ko-KR")}명</td>
+                                    <td>{injury.toLocaleString("ko-KR")}명</td>
                                 </tr>
                             );
                         })}
@@ -131,9 +130,9 @@ const App = () => {
                 <tfoot>
                     <tr>
                         <th colSpan="3">합계</th>
-                        <th>{accSum.toLocaleString('ko-KR')}건</th>
-                        <th>{deaSum.toLocaleString('ko-KR')}명</th>
-                        <th>{injSum.toLocaleString('ko-KR')}명</th>
+                        <th>{accSum.toLocaleString("ko-KR")}건</th>
+                        <th>{deaSum.toLocaleString("ko-KR")}명</th>
+                        <th>{injSum.toLocaleString("ko-KR")}명</th>
                     </tr>
                 </tfoot>
             </Table>
