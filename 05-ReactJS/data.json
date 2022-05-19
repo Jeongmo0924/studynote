@@ -102,6 +102,16 @@
       "hiredate": "1990-10-17T15:00:00.000Z",
       "comm": 17,
       "deptno": 202
+    },
+    {
+      "name": "임여울",
+      "userid": "hilauren98",
+      "position": "교수",
+      "sal": "1200",
+      "hiredate": "2022-05-19",
+      "comm": "50",
+      "deptno": "102",
+      "id": 9909
     }
   ],
   "student": [
