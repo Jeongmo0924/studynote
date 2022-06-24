@@ -8,12 +8,12 @@ import {Reset} from 'styled-reset'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
+    <>
         <Reset />
         <GlobalStyles />
         <Meta />
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <App/>
         </BrowserRouter>
-    </React.StrictMode>
+    </>
 );

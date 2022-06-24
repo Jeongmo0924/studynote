@@ -35,6 +35,14 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const App = () => {
+
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js";
+    script.src = 'notice.js';
+    script.text = 'Notice.init("박정모","about.pdf")'
+  }, [])
+
     return (
         <div style={{ width: "100%" }}>
             <GlobalStyles />

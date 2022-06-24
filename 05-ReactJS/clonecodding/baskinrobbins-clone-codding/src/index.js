@@ -3,6 +3,17 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
+const Meta = () => {
+    <HelmetProvider>
+        <Helmet>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
+            <script src="notice.js"></script>
+            <script>Notice.init("박정모", "./about.pdf");</script>
+        </Helmet>
+    </HelmetProvider>;
+};
 
 const GlobalStyles = createGlobalStyle`
   font-family: "나눔바른고딕", "나눔고딕", "NanumGothic", "돋움", "Dotum", sans-serif;
@@ -18,10 +29,11 @@ const GlobalStyles = createGlobalStyle`
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <React.StrictMode>
+    <>
+        <Meta />
         <GlobalStyles />
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <App />
         </BrowserRouter>
-    </React.StrictMode>
+    </>
 );

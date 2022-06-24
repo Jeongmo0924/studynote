@@ -4,8 +4,8 @@
  * @author: 박정모(oooperbjm@gmail.com)
  */
 
-import React from 'react';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import React from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 /**
  * SEO 처리를 정의한 객체
@@ -17,26 +17,29 @@ const Meta = (props) => {
         <HelmetProvider>
             <Helmet>
                 <title>Clone Codding 1 ::: by React</title>
-                <meta charSet="utf-8"/>
+                <meta charSet="utf-8" />
                 {/* SEO 태그 */}
-                <meta name='description' content={props.description}/>
-                <meta name='keywords' content={props.keywords}/>
-                <meta name='author' content={props.author}/>
-                <meta property='og:type' content='website'/>
-                <meta property='og:title' content={props.title}/>
-                <meta property='og:description' content={props.description}/>
-                <meta property='og:image' content={props.image}/>
-                <meta property='og:url' content={props.url}/>
+                <meta name="description" content={props.description} />
+                <meta name="keywords" content={props.keywords} />
+                <meta name="author" content={props.author} />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content={props.title} />
+                <meta property="og:description" content={props.description} />
+                <meta property="og:image" content={props.image} />
+                <meta property="og:url" content={props.url} />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
+                <script src="notice.js"></script>
+                <script>Notice.init("박정모", "./about.pdf");</script>
             </Helmet>
         </HelmetProvider>
     );
 };
 
 Meta.defaultProps = {
-    title: 'React Example',
-    description: 'React.js 예제 입니다.',
-    keywords : 'React',
-    author : '박정모',
+    title: "React Example",
+    description: "React.js 예제 입니다.",
+    keywords: "React",
+    author: "박정모",
     url: window.location.href,
 };
 

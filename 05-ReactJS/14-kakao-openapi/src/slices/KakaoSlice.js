@@ -53,10 +53,10 @@ const KakaoSlice = createSlice({
         [getKakaoSearch.pending]: (state, {payload}) => {
             return { ...state, loading: true };
         },
-        [getKakaoSearch.fulfilled]: (state, {payload}) => {
+        [getKakaoSearch.fulfilled]: (state, { meta, payload}) => {
             return {
                 meta: payload?.data?.meta,
-                documents: payload?.data?.documents,
+                documents: meta.arg.page > 1 ? state.documents.concat(payload?.data?.documents) : payload?.data?.documents,
                 loading: false,
                 error: null,
             }
