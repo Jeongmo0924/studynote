@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 50
+    },
+    "auditLog": "C:\\Users\\pjm\\studynote\\06-NodeJS\\07-LOG\\_files\\_logs\\.d485ba461fd66cbee1ab44160b187bf1ed4e72b3-audit.json",
+    "files": [
+        {
+            "date": 1656294661334,
+            "name": "C:\\Users\\pjm\\studynote\\06-NodeJS\\07-LOG\\_files\\_logs\\log_220627.log",
+            "hash": "69b956cc077ac25b8064b26bd32cfacf69106bf07ce67abf834fd184ee1ccd48"
+        }
+    ],
+    "hashType": "sha256"
+}

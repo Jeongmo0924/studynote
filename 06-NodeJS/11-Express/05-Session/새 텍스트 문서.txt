@@ -1,0 +1,30 @@
+세션은 백엔드가 직접 저장/관리
+쿠키보다 보안에 유리 -> 로그인 정보 관리등에 사용
+```
+yarn add express-session
+```
+
+Cookie와 Session은 동전의 앞뒷면과 비슷
+
+세션과 관련된 환경설정 값
+```env
+SESSION_ENCRYPT_KEY = helloworld123
+```
+
+쿠키 설정 이후에 세션 설정
+```
+app.use(expressSession({
+	secret: process.env.SESSION_ENCRYPT_KEY,
+	resave: false,
+	saveUninitialized: false
+}));
+```
+
+어떻게 쓰는지 봅시다.
+
+자 첫 번째는 insomnia로 테스트를 할거에요
+자
+router
+	.post('/session'. (req, res, next) => {
+				
+	})

@@ -1,0 +1,13 @@
+{
+  "name": "11-Express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "express-session": "^1.17.3",
+    "method-override": "^3.0.0"
+  }
+}
