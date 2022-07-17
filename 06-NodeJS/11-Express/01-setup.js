@@ -25,6 +25,7 @@ const app = express();
 const __dirname = path.resolve();
 
 // 설정 파일 내용 가져오기
+// 이렇게 가져온 파일 내용은 `process.env.변수이름`으로 접근이 가능
 dotenv.config({ path: path.join(__dirname, "../config.env") });
 
 /*----------------------------------------------------------------------
@@ -37,41 +38,41 @@ app.use(useragent.express());
 
 // 클라이언트의 접속을 감지
 app.use((req, res, next) => {
-  logger.debug("클라이언트가 접속했습니다.");
+    logger.debug("클라이언트가 접속했습니다.");
 
-  // 클라이언트가 접속한 시간
-  const beginTime = Date.now();
+    // 클라이언트가 접속한 시간
+    const beginTime = Date.now();
 
-  // 클라이언트의 IP주소(출처: 스택오버플로우)
-  const ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress;
+    // 클라이언트의 IP주소(출처: 스택오버플로우)
+    const ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress;
 
-  // 클라이언트의 디바이스 정보 기록 (UserAgent 사용)
-  logger.debug(`[clinet] ${ip} / ${req.useragent.os} / ${req.useragent.browser} (${req.useragent.version}) / ${req.useragent.platform}`);
+    // 클라이언트의 디바이스 정보 기록 (UserAgent 사용)
+    logger.debug(`[clinet] ${ip} / ${req.useragent.os} / ${req.useragent.browser} (${req.useragent.version}) / ${req.useragent.platform}`);
 
-  // 클라이언트가 요청한 페이지 URL
-  // 콜백함수에 전달되는 req 파라미터는 클라이언트가 요청한 URL의 각 부분을 변수로 담고 있다.
-  const current_url = urlFormat({
-    protocol: req.protocol, // ex) http://
-    host: req.get("host"), // ex) 172.16.141.1
-    port: req.port, // ex) 3000
-    pathname: req.originalUrl, // ex) /page1.html
-  });
+    // 클라이언트가 요청한 페이지 URL
+    // 콜백함수에 전달되는 req 파라미터는 클라이언트가 요청한 URL의 각 부분을 변수로 담고 있다.
+    const current_url = urlFormat({
+        protocol: req.protocol, // ex) http://
+        host: req.get("host"), // ex) 172.16.141.1
+        port: req.port, // ex) 3000
+        pathname: req.originalUrl, // ex) /page1.html
+    });
 
-  logger.debug(`[${req.method}] ${decodeURIComponent(current_url)}`);
+    logger.debug(`[${req.method}] ${decodeURIComponent(current_url)}`);
 
-  // 클라이언트의 접속이 종료된 경우의 이벤트 --> 모든 응답의 전송이 완료된 경우
-  res.on("finish", () => {
-    // 접속 종료 시간
-    const endTime = Date.now();
+    // 클라이언트의 접속이 종료된 경우의 이벤트 --> 모든 응답의 전송이 완료된 경우
+    res.on("finish", () => {
+        // 접속 종료 시간
+        const endTime = Date.now();
 
-    // 이번 접속에서 클라이언트가 머문 시간 = 백엔드가 실행하는데 걸린 시간
-    const time = endTime - beginTime;
-    logger.debug(`클라이언트의 접속이 종료되었습니다. ::: [runtime] ${time}ms`);
-    logger.debug("--------------------------------------------------");
-  });
+        // 이번 접속에서 클라이언트가 머문 시간 = 백엔드가 실행하는데 걸린 시간
+        const time = endTime - beginTime;
+        logger.debug(`클라이언트의 접속이 종료되었습니다. ::: [runtime] ${time}ms`);
+        logger.debug("--------------------------------------------------");
+    });
 
-  // 이 콜백함수를 종료하고 요청 URL에 연결된 기능으로 제어를 넘김
-  next();
+    // 이 콜백함수를 종료하고 요청 URL에 연결된 기능으로 제어를 넘김
+    next();
 });
 
 /*----------------------------------------------------------------------
@@ -96,33 +97,33 @@ app.use("/", router);
 /** 01-setup.js */
 // router.route(path).get|post|put|delete((req, res, next) => {})
 router.get("/page1", (req, res, next) => {
-  // 브라우저에게 전달할 응답 내용
-  let html = "<h1>Page1</h1>";
-  html += "<h2>Express로 구현한 Node.js 백엔드 페이지</h2>";
+    // 브라우저에게 전달할 응답 내용
+    let html = "<h1>Page1</h1>";
+    html += "<h2>Express로 구현한 Node.js 백엔드 페이지</h2>";
 
-  /** 응답보내기(1) - Node 순정 방법 */
-  // res.writeHead(200);
-  // res.write(html);
-  // res.end();
+    /** 응답보내기(1) - Node 순정 방법 */
+    // res.writeHead(200);
+    // res.write(html);
+    // res.end();
 
-  /** 응답보내기(2) - Express의 간결화된 방법 */
-  // resolve.status(200);
-  // res.send(html);
+    /** 응답보내기(2) - Express의 간결화된 방법 */
+    // resolve.status(200);
+    // res.send(html);
 
-  /** 응답보내기(3) - (2)의 메서드 체인 가능 */
-  res.status(200).send(html);
+    /** 응답보내기(3) - (2)의 메서드 체인 가능 */
+    res.status(200).send(html);
 });
 
 router.get("/page2", (req, res, next) => {
-  // 브라우저에게 전달할 응답 내용
-  let html = "<h1>Page2</h1>";
-  html += "<h2>Node.js BackEnd Page</h2>";
-  res.status(200).send(html);
+    // 브라우저에게 전달할 응답 내용
+    let html = "<h1>Page2</h1>";
+    html += "<h2>Node.js BackEnd Page</h2>";
+    res.status(200).send(html);
 });
 
 router.get("/page3", (req, res, next) => {
-  // 페이지 강제 이동
-  res.redirect("https://www.naver.com");
+    // 페이지 강제 이동
+    res.redirect("https://www.naver.com");
 });
 
 /*----------------------------------------------------------------------
@@ -131,11 +132,11 @@ router.get("/page3", (req, res, next) => {
 const ip = myip();
 
 app.listen(process.env.PORT, () => {
-  logger.debug("--------------------------------------------------");
-  logger.debug("|             Start EXPRESS SERVER               |");
-  logger.debug("--------------------------------------------------");
+    logger.debug("--------------------------------------------------");
+    logger.debug("|             Start EXPRESS SERVER               |");
+    logger.debug("--------------------------------------------------");
 
-  ip.forEach((v, i) => {
-    logger.debug(`server address => http://${v}:${process.env.PORT}`);
-  });
+    ip.forEach((v, i) => {
+        logger.debug(`server address => http://${v}:${process.env.PORT}`);
+    });
 });

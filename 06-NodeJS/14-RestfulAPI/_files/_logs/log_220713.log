@@ -1,0 +1,87 @@
+22/07/13 11:19:59 865 [debug]: --------------------------------------------------
+22/07/13 11:19:59 868 [debug]: |              Start Express Server              |
+22/07/13 11:19:59 868 [debug]: --------------------------------------------------
+22/07/13 11:19:59 869 [debug]: --------------------------------------------------
+22/07/13 11:20:50 232 [debug]: --------------------------------------------------
+22/07/13 11:20:50 235 [debug]: |              Start Express Server              |
+22/07/13 11:20:50 235 [debug]: --------------------------------------------------
+22/07/13 11:20:50 236 [debug]: --------------------------------------------------
+22/07/13 11:21:15 061 [info]: Database Pool is closed
+22/07/13 11:21:16 841 [debug]: --------------------------------------------------
+22/07/13 11:21:16 844 [debug]: |              Start Express Server              |
+22/07/13 11:21:16 844 [debug]: --------------------------------------------------
+22/07/13 11:21:16 845 [debug]: --------------------------------------------------
+22/07/13 11:21:18 560 [info]: Database Pool is closed
+22/07/13 11:23:27 968 [debug]: --------------------------------------------------
+22/07/13 11:23:27 971 [debug]: |              Start Express Server              |
+22/07/13 11:23:27 972 [debug]: --------------------------------------------------
+22/07/13 11:23:27 972 [debug]: --------------------------------------------------
+22/07/13 11:23:30 712 [info]: Database Pool is closed
+22/07/13 11:26:05 592 [debug]: --------------------------------------------------
+22/07/13 11:26:05 595 [debug]: |              Start Express Server              |
+22/07/13 11:26:05 595 [debug]: --------------------------------------------------
+22/07/13 11:26:05 596 [debug]: --------------------------------------------------
+22/07/13 11:26:28 343 [info]: Database Pool is closed
+22/07/13 11:28:39 627 [debug]: --------------------------------------------------
+22/07/13 11:28:39 629 [debug]: |              Start Express Server              |
+22/07/13 11:28:39 630 [debug]: --------------------------------------------------
+22/07/13 11:28:39 630 [debug]: --------------------------------------------------
+22/07/13 11:28:51 120 [debug]: 클라이언트가 접속했습니다.
+22/07/13 11:28:51 121 [debug]: [client] ::ffff:192.168.100.8 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/13 11:28:51 122 [debug]: [GET] http://192.168.100.8:3002/page2
+22/07/13 11:28:51 126 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/13 11:28:51 127 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/pjm/studynote/06-NodeJS/14-RestfulAPI/app.js:131:48
+    at Layer.handle [as handle_request] (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:328:13)
+22/07/13 11:28:51 132 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/13 11:28:51 132 [debug]: --------------------------------------------------
+22/07/13 11:28:54 343 [debug]: 클라이언트가 접속했습니다.
+22/07/13 11:28:54 344 [debug]: [client] ::ffff:192.168.100.8 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/13 11:28:54 344 [debug]: [GET] http://192.168.100.8:3002/
+22/07/13 11:28:54 346 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/13 11:28:54 346 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/pjm/studynote/06-NodeJS/14-RestfulAPI/app.js:131:48
+    at Layer.handle [as handle_request] (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\pjm\studynote\06-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:328:13)
+22/07/13 11:28:54 348 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/13 11:28:54 348 [debug]: --------------------------------------------------
+22/07/13 11:29:45 350 [debug]: 클라이언트가 접속했습니다.
+22/07/13 11:29:45 350 [debug]: [client] ::ffff:192.168.100.8 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/13 11:29:45 351 [debug]: [GET] http://192.168.100.8:3002/department/101
+22/07/13 11:29:45 352 [debug]: [HTTP %s Params] %s=%s
+22/07/13 11:29:45 392 [info]:  >> DATABASE 접속됨 [threaId=55]
+22/07/13 11:29:45 392 [info]:  >> Connection 임대됨 [threaId=55]
+22/07/13 11:29:45 395 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='101'
+22/07/13 11:29:45 419 [info]:  >> Connection 반납됨 [threaId=55]
+22/07/13 11:29:45 420 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 70ms
+22/07/13 11:29:45 421 [debug]: --------------------------------------------------
+22/07/13 11:33:54 259 [debug]: 클라이언트가 접속했습니다.
+22/07/13 11:33:54 259 [debug]: [client] ::ffff:192.168.100.8 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/13 11:33:54 259 [debug]: [GET] http://192.168.100.8:3002/department/
+22/07/13 11:33:54 261 [debug]: [HTTP %s Params] %s=%s
+22/07/13 11:33:54 261 [debug]: [HTTP %s Params] %s=%s
+22/07/13 11:33:54 261 [debug]: [HTTP %s Params] %s=%s
+22/07/13 11:33:54 261 [info]:  >> Connection 임대됨 [threaId=55]
+22/07/13 11:33:54 264 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/13 11:33:54 267 [info]:  >> Connection 반납됨 [threaId=55]
+22/07/13 11:33:54 267 [info]:  >> Connection 임대됨 [threaId=55]
+22/07/13 11:33:54 269 [debug]: SELECT deptno, dname, loc FROM department  ORDER BY deptno DESC  LIMIT 0, 10
+22/07/13 11:33:54 270 [info]:  >> Connection 반납됨 [threaId=55]
+22/07/13 11:33:54 271 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+22/07/13 11:33:54 271 [debug]: --------------------------------------------------
+22/07/13 12:54:34 747 [info]: Database Pool is closed

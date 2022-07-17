@@ -10,7 +10,7 @@ import axios from "axios";
         confmKey: "devU01TX0FVVEgyMDIyMDYyNzE1NTQ0ODExMjczNzE=", // 발급받은 승인키
         currentPage: 1, // 현재 페이지 번호
         countPerPage: 20, // 페이지당 출력할 결과 Row 수
-        keyword: "행원마을 동아솔레시티", // 주소 검색어
+        keyword: "보정로", // 주소 검색어
         resultType: "json", // 검색결과 형식 설정(xml, json)
       },
     });

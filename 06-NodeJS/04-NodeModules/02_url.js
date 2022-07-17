@@ -10,7 +10,7 @@ const location = new URL(myurl);
 console.group("URL 성분 정보 확인");
 console.debug(location);
 console.debug(`href: ${location.href}`);
-console.debug(`protocol: ${location.protocol}`);
+console.debug(`protocol: ${location.protocol}`); // 통신방식(http:, https:)
 console.debug(`host: ${location.host}`);
 console.debug(`hostname: ${location.hostname}`);
 console.debug(`port: ${location.port}`);

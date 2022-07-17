@@ -1,5 +1,6 @@
 /**
  * Crontab 스타일의 스케쥴 지정
+ * --> link = crontab.guru
  */
 /** 1) 필요한 패키지 참조하기 */
 import logger from "./helper/LogHelper.js";

@@ -7,6 +7,7 @@ import { truncate } from "fs";
 
 // 프로젝트 폴더 위치 조회
 const __dirname = resolve();
+console.log("☆★☆★☆★☆★☆★☆★" + __dirname + "☆★☆★☆★☆★☆★☆★");
 
 /** (2) 환경설정 정보 */
 const config = {

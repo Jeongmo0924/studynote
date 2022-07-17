@@ -10,3 +10,7 @@ import schedule from "node-schedule";
 // 현재 시각
 const atTime = dayjs();
 logger.debug(atTime.format("HH:mm:ss"));
+
+// 5초 후 시각
+const afTime = atTime.add(5, "second");
+logger.debug(afTime.format("HH:mm:ss"));
